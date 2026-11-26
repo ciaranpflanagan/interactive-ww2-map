@@ -1,0 +1,9 @@
+{
+  "id": "osm",
+  "title": "OpenStreetMap",
+  "publisher": "OpenStreetMap contributors",
+  "url": "https://www.openstreetmap.org/",
+  "type": "database",
+  "license": "ODbL 1.0",
+  "notes": "Cite with locator 'node/123' etc. Used for present-day locations only."
+}

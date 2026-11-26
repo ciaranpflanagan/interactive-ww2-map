@@ -1,0 +1,49 @@
+{
+  "id": "operation-epsom",
+  "name": "Operation Epsom",
+  "kind": "operation",
+  "parent": "battle-for-caen",
+  "wikidata": "Q2348027",
+  "wikipedia": "https://en.wikipedia.org/wiki/Operation_Epsom",
+  "zoom": {
+    "min": 5
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-26",
+    "end": "1944-06-30",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2348027 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.3,
+      49.2833
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2348027 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "Allies military operation in France in 1944.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2348027 description"
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+:root {
+  --bg: #f6f4ef; --fg: #1d1b18; --muted: #6b665e; --accent: #b3261e; --panel: #ffffff; --line: #ddd8ce;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; color: var(--fg); background: var(--bg);
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #171614; --fg: #ece8e1; --muted: #a39d93; --panel: #22201d; --line: #3a3733; --accent: #e5554b; }
+}
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body { background: var(--bg); }
+a { color: var(--accent); }
+.app { display: grid; grid-template-rows: auto 1fr auto; height: 100%; }
+.topbar { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding: .5rem 1rem; border-bottom: 1px solid var(--line); }
+.topbar h1 { font-size: 1.05rem; margin: 0; }
+.scope { font-weight: 400; color: var(--muted); margin-left: .5rem; }
+button.link { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; font: inherit; text-decoration: underline; text-align: left; }
+.stage { position: relative; min-height: 0; }
+.map { position: absolute; inset: 0; }
+.error { padding: .5rem 1rem; background: #fde7e5; color: #6b0f0a; }
+.panel { position: absolute; top: .75rem; left: .75rem; bottom: .75rem; width: min(380px, calc(100% - 1.5rem)); overflow-y: auto;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 1rem 1.1rem; box-shadow: 0 4px 18px rgba(0,0,0,.15); z-index: 2; }
+.panel h2 { margin: .25rem 2rem .25rem 0; font-size: 1.3rem; }
+.panel h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin: 1.2rem 0 .4rem; }
+.close { position: absolute; top: .4rem; right: .5rem; background: none; border: 0; font-size: 1.5rem; cursor: pointer; color: var(--muted); }
+.breadcrumb { font-size: .85rem; }
+.when { color: var(--muted); margin: 0 0 .5rem; }
+.review { font-size: .8rem; padding: .3rem .5rem; border-radius: 4px; border-left: 3px solid; }
+.review-unreviewed { border-color: #c98a00; background: rgba(201,138,0,.1); }
+.review-agent-checked { border-color: #2c6fbb; background: rgba(44,111,187,.1); }
+.review-approved { border-color: #2e7d32; background: rgba(46,125,50,.1); }
+.cites a { font-size: .7rem; margin-left: 1px; text-decoration: none; }
+.facts { width: 100%; border-collapse: collapse; font-size: .9rem; }
+.facts th, .facts td { text-align: left; padding: .3rem 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.facts th { font-weight: 500; color: var(--muted); width: 45%; }
+.disputed { font-size: .75rem; color: #c98a00; }
+.citation-list { font-size: .8rem; padding-left: 1.3rem; }
+.citation-list li { margin-bottom: .4rem; }
+.citation-list blockquote { margin: .2rem 0; color: var(--muted); font-style: italic; }
+.locator { font-family: ui-monospace, monospace; font-size: .75rem; }
+.src-type { margin-left: .4rem; font-size: .65rem; text-transform: uppercase; padding: 0 .3rem; border: 1px solid var(--line); border-radius: 3px; color: var(--muted); }
+.muted { color: var(--muted); } .small { font-size: .8rem; }
+.side-allied::marker { color: #2c6fbb; } .side-axis::marker { color: #555; }
+.timeline { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: .75rem; padding: .5rem 1rem; border-top: 1px solid var(--line); }
+.play { width: 2.2rem; height: 2.2rem; border-radius: 50%; border: 1px solid var(--line); background: var(--panel); color: var(--fg); cursor: pointer; }
+.track { position: relative; height: 2.2rem; }
+.histogram { position: absolute; inset: 0 0 .9rem; display: flex; align-items: flex-end; gap: 1px; opacity: .35; pointer-events: none; }
+.histogram span { flex: 1; background: var(--accent); min-height: 1px; }
+.track input { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; margin: 0; accent-color: var(--accent); }
+.date { font-variant-numeric: tabular-nums; min-width: 9.5rem; text-align: right; font-weight: 600; }
+.about { max-width: 640px; width: calc(100% - 2rem); border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--fg); padding: 1.25rem 1.5rem; }
+.about::backdrop { background: rgba(0,0,0,.4); }
+.sources { font-size: .85rem; padding-left: 1.1rem; }
+@media (max-width: 640px) {
+  .panel { top: auto; left: 0; right: 0; bottom: 0; width: 100%; max-height: 60%; border-radius: 12px 12px 0 0; }
+  .date { min-width: 0; font-size: .85rem; }
+  .scope { display: none; }
+}

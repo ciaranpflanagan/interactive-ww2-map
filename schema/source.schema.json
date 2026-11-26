@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source",
+  "description": "A source that events cite. One file per source in data/sources/<id>.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "type", "license"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "title": { "type": "string" },
+    "author": { "type": "string" },
+    "publisher": { "type": "string" },
+    "year": { "type": "integer" },
+    "url": { "type": "string", "format": "uri" },
+    "type": { "enum": ["primary", "official-history", "secondary", "tertiary", "database"], "description": "official-history = e.g. US Army 'Green Books', UK Official History. tertiary = encyclopedias incl. Wikipedia. database = Wikidata, OSM." },
+    "license": { "type": "string", "description": "e.g. 'Public domain (US Government work)', 'CC0', 'CC BY-SA 4.0', 'ODbL', 'Copyrighted (facts cited, no text reused)'." },
+    "accessed": { "type": "string", "format": "date" },
+    "notes": { "type": "string" }
+  }
+}

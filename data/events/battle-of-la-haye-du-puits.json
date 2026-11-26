@@ -1,0 +1,49 @@
+{
+  "id": "battle-of-la-haye-du-puits",
+  "name": "Battle of La Haye-du-Puits",
+  "kind": "battle",
+  "parent": "operation-overlord",
+  "wikidata": "Q124818173",
+  "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_La_Haye-du-Puits",
+  "zoom": {
+    "min": 7
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-07-03",
+    "end": "1944-07-14",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q124818173 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -1.569444444,
+      49.2725
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q124818173 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "Battle during Operation Overlord.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q124818173 description"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "battle-of-carentan",
+  "name": "Battle of Carentan",
+  "kind": "battle",
+  "parent": "operation-overlord",
+  "wikidata": "Q576774",
+  "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Carentan",
+  "zoom": {
+    "min": 7
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-10",
+    "end": "1944-06-14",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q576774 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -1.24944,
+      49.305
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q576774 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 battle in France during World War II.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q576774 description"
+      }
+    ]
+  }
+}

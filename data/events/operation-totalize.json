@@ -1,0 +1,49 @@
+{
+  "id": "operation-totalize",
+  "name": "Operation Totalize",
+  "kind": "operation",
+  "parent": "operation-overlord",
+  "wikidata": "Q714280",
+  "wikipedia": "https://en.wikipedia.org/wiki/Operation_Totalize",
+  "zoom": {
+    "min": 5
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-08-08",
+    "end": "1944-08-13",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q714280 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.3625,
+      49.186111111
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q714280 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 military operation.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q714280 description"
+      }
+    ]
+  }
+}

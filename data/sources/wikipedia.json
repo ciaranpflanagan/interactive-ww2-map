@@ -1,0 +1,9 @@
+{
+  "id": "wikipedia",
+  "title": "Wikipedia (English)",
+  "publisher": "Wikimedia Foundation",
+  "url": "https://en.wikipedia.org/",
+  "type": "tertiary",
+  "license": "CC BY-SA 4.0",
+  "notes": "Cite with locator '<article title> § <section>'. Prefer citing the reference Wikipedia itself cites. Never copy prose verbatim; paraphrase."
+}

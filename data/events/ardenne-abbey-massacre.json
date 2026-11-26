@@ -1,0 +1,48 @@
+{
+  "id": "ardenne-abbey-massacre",
+  "name": "Ardenne Abbey massacre",
+  "kind": "atrocity",
+  "parent": "operation-overlord",
+  "wikidata": "Q22947455",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ardenne_Abbey_massacre",
+  "zoom": {
+    "min": 10
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-07",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q22947455 P585"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.4138917,
+      49.1964917
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q22947455 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "Ardenne Abbey massacre.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q22947455 description"
+      }
+    ]
+  }
+}

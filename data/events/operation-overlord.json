@@ -1,0 +1,48 @@
+{
+  "id": "operation-overlord",
+  "name": "Operation Overlord",
+  "kind": "operation",
+  "wikidata": "Q8641370",
+  "wikipedia": "https://en.wikipedia.org/wiki/Operation_Overlord",
+  "zoom": {
+    "min": 5
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-06",
+    "end": "1944-08-30",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q8641370 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.566667,
+      49.333333
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q8641370 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 Allied liberation of German-occupied France during World War II.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q8641370 description"
+      }
+    ]
+  }
+}

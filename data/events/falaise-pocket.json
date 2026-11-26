@@ -1,0 +1,49 @@
+{
+  "id": "falaise-pocket",
+  "name": "Falaise Pocket",
+  "kind": "battle",
+  "parent": "operation-overlord",
+  "wikidata": "Q602744",
+  "wikipedia": "https://en.wikipedia.org/wiki/Falaise_pocket",
+  "zoom": {
+    "min": 7
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-08-12",
+    "end": "1944-08-21",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q602744 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.191944444,
+      48.892777777
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q602744 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 engagement of the Battle of Normandy in the Second World War.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q602744 description"
+      }
+    ]
+  }
+}

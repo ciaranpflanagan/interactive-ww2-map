@@ -1,0 +1,49 @@
+{
+  "id": "operation-windsor",
+  "name": "Operation Windsor",
+  "kind": "operation",
+  "parent": "battle-for-caen",
+  "wikidata": "Q3354892",
+  "wikipedia": "https://en.wikipedia.org/wiki/Operation_Windsor",
+  "zoom": {
+    "min": 5
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-07-04",
+    "end": "1944-07-05",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q3354892 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.445,
+      49.185
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q3354892 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 pperation of World War II.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q3354892 description"
+      }
+    ]
+  }
+}

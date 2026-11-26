@@ -1,0 +1,49 @@
+{
+  "id": "operation-bluecoat",
+  "name": "Operation Bluecoat",
+  "kind": "operation",
+  "parent": "operation-overlord",
+  "wikidata": "Q714293",
+  "wikipedia": "https://en.wikipedia.org/wiki/Operation_Bluecoat",
+  "zoom": {
+    "min": 5
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-07-30",
+    "end": "1944-08-07",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q714293 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.89222222,
+      48.84277778
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q714293 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "Military operation (part of Operation Overlord; Normandy, France; 1944).",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q714293 description"
+      }
+    ]
+  }
+}

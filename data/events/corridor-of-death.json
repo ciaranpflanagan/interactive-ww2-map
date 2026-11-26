@@ -1,0 +1,48 @@
+{
+  "id": "corridor-of-death",
+  "name": "Corridor of Death",
+  "kind": "other",
+  "parent": "invasion-of-normandy",
+  "wikidata": "Q16544085",
+  "zoom": {
+    "min": 8
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-08-19",
+    "end": "1944-08-20",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q16544085 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.090722222,
+      48.811722222
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q16544085 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "Corridor of Death.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q16544085 description"
+      }
+    ]
+  }
+}

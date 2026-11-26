@@ -1,0 +1,49 @@
+{
+  "id": "operation-tractable",
+  "name": "Operation Tractable",
+  "kind": "operation",
+  "parent": "operation-overlord",
+  "wikidata": "Q683912",
+  "wikipedia": "https://en.wikipedia.org/wiki/Operation_Tractable",
+  "zoom": {
+    "min": 5
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-08-14",
+    "end": "1944-08-21",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q683912 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.19194444,
+      48.89277778
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q683912 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "Battle of World War II.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q683912 description"
+      }
+    ]
+  }
+}

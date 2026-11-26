@@ -1,0 +1,47 @@
+{
+  "id": "juno-beach",
+  "name": "Juno Beach",
+  "kind": "landing",
+  "wikidata": "Q832409",
+  "wikipedia": "https://en.wikipedia.org/wiki/Juno_Beach",
+  "zoom": {
+    "min": 8
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-06",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q832409 P585"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.452509139,
+      49.335833776
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q832409 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "Landing area during Operation Overlord.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q832409 description"
+      }
+    ]
+  }
+}

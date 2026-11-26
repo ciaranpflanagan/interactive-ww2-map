@@ -1,0 +1,48 @@
+{
+  "id": "operation-coup-de-main",
+  "name": "Operation Coup de Main",
+  "kind": "operation",
+  "parent": "normandy-landings",
+  "wikidata": "Q3817010",
+  "wikipedia": "https://en.wikipedia.org/wiki/Capture_of_the_Caen_Canal_and_Orne_River_bridges",
+  "zoom": {
+    "min": 5
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-06",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q3817010 P585"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.274444444,
+      49.242222222
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q3817010 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 airborne forces operation by the British Army during the Normandy landings.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q3817010 description"
+      }
+    ]
+  }
+}

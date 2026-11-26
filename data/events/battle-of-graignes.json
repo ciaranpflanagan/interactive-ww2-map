@@ -1,0 +1,49 @@
+{
+  "id": "battle-of-graignes",
+  "name": "Battle of Graignes",
+  "kind": "battle",
+  "parent": "normandy-landings",
+  "wikidata": "Q4871133",
+  "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Graignes",
+  "zoom": {
+    "min": 7
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-10",
+    "end": "1944-06-12",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q4871133 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -1.2,
+      49.25
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q4871133 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "Battle near this commune that started on June 6, 1944.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q4871133 description"
+      }
+    ]
+  }
+}

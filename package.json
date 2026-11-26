@@ -1,0 +1,35 @@
+{
+  "name": "interactive-ww2-map",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run data:build && tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "data:validate": "tsx scripts/validate-data.ts",
+    "data:build": "tsx scripts/build-data.ts",
+    "data:import-wikidata": "tsx scripts/import-wikidata.ts",
+    "test:e2e": "playwright test --trace off",
+    "check": "npm run data:validate && npm run typecheck && npm run build"
+  },
+  "dependencies": {
+    "maplibre-gl": "6.19.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "ajv": "8.20.0",
+    "ajv-formats": "^3.0.1",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.8"
+  }
+}

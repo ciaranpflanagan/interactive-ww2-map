@@ -1,0 +1,49 @@
+{
+  "id": "operation-spring",
+  "name": "Operation Spring",
+  "kind": "operation",
+  "parent": "operation-overlord",
+  "wikidata": "Q2706523",
+  "wikipedia": "https://en.wikipedia.org/wiki/Operation_Spring",
+  "zoom": {
+    "min": 5
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-07-25",
+    "end": "1944-07-27",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2706523 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.33236,
+      49.1104
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2706523 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 military operation.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2706523 description"
+      }
+    ]
+  }
+}

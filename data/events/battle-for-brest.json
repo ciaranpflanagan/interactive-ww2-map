@@ -1,0 +1,49 @@
+{
+  "id": "battle-for-brest",
+  "name": "Battle for Brest",
+  "kind": "battle",
+  "parent": "operation-overlord",
+  "wikidata": "Q714223",
+  "wikipedia": "https://en.wikipedia.org/wiki/Battle_for_Brest",
+  "zoom": {
+    "min": 7
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-08-07",
+    "end": "1944-09-19",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q714223 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -4.486262423,
+      48.38994307
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q714223 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 battle fought on the Western Front during World War II.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q714223 description"
+      }
+    ]
+  }
+}

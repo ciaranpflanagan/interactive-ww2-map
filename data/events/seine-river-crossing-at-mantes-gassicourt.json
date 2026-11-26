@@ -1,0 +1,49 @@
+{
+  "id": "seine-river-crossing-at-mantes-gassicourt",
+  "name": "Seine River Crossing at Mantes-Gassicourt",
+  "kind": "other",
+  "parent": "operation-overlord",
+  "wikidata": "Q27628316",
+  "wikipedia": "https://en.wikipedia.org/wiki/Seine_River_Crossing_at_Mantes-Gassicourt",
+  "zoom": {
+    "min": 8
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-08-18",
+    "end": "1944-08-20",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q27628316 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      1.686666666,
+      49.008611111
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q27628316 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "Seine River Crossing at Mantes-Gassicourt.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q27628316 description"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "battle-of-port-en-bessin",
+  "name": "Battle of Port-en-Bessin",
+  "kind": "battle",
+  "parent": "normandy-landings",
+  "wikidata": "Q16208804",
+  "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Port-en-Bessin",
+  "zoom": {
+    "min": 7
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-06",
+    "end": "1944-06-07",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q16208804 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.753889,
+      49.345
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q16208804 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 battle.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q16208804 description"
+      }
+    ]
+  }
+}

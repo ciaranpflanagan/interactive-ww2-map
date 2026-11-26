@@ -1,0 +1,11 @@
+agent:ready|0e8a16|Well-specified; the foreman may assign it to a worker agent
+agent:in-progress|fbca04|A worker agent session is working on this
+needs-human|d93f0b|Blocked on a decision or review only the maintainer can make
+review:passed|1d76db|Agent code review passed (enables automerge for unprotected paths)
+data:approved|0e8a16|Maintainer approved the historical data in this PR (owner only)
+data|c5def5|Historical data: events, sources
+feature|a2eeef|App feature or UX work
+bug|d73a4a|Something is broken
+correction|e99695|Reported factual error in the data
+infra|bfdadc|CI/CD, Azure, repository automation
+epic|3e4b9e|Large goal; the foreman breaks it into issues

@@ -1,0 +1,47 @@
+{
+  "id": "omaha-beach",
+  "name": "Omaha Beach",
+  "kind": "landing",
+  "wikidata": "Q464257",
+  "wikipedia": "https://en.wikipedia.org/wiki/Omaha_Beach",
+  "zoom": {
+    "min": 8
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-06",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q464257 P585"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.868611111,
+      49.368888888
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q464257 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 one of the five sectors of the Allied invasion of German-occupied France.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q464257 description"
+      }
+    ]
+  }
+}

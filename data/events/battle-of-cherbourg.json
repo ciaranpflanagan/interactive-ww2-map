@@ -1,0 +1,49 @@
+{
+  "id": "battle-of-cherbourg",
+  "name": "Battle of Cherbourg",
+  "kind": "battle",
+  "parent": "operation-overlord",
+  "wikidata": "Q516202",
+  "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Cherbourg",
+  "zoom": {
+    "min": 7
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-06",
+    "end": "1944-06-30",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q516202 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -1.625,
+      49.638888888
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q516202 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 part of the Battle of Normandy during World War II.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q516202 description"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "operation-martlet",
+  "name": "Operation Martlet",
+  "kind": "operation",
+  "parent": "battle-for-caen",
+  "wikidata": "Q3139030",
+  "wikipedia": "https://en.wikipedia.org/wiki/Operation_Martlet",
+  "zoom": {
+    "min": 5
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-25",
+    "end": "1944-07-01",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q3139030 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.573056,
+      49.1533
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q3139030 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 part of a series of British attacks to capture the French town of Caen and its environs from German forces during the Battle of Normandy of World War II.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q3139030 description"
+      }
+    ]
+  }
+}

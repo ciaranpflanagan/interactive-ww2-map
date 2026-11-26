@@ -1,0 +1,48 @@
+{
+  "id": "brecourt-manor-assault",
+  "name": "Brécourt Manor Assault",
+  "kind": "battle",
+  "parent": "normandy-landings",
+  "wikidata": "Q28703",
+  "wikipedia": "https://en.wikipedia.org/wiki/Br%C3%A9court_Manor_assault",
+  "zoom": {
+    "min": 7
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-06",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q28703 P585"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -1.22611111,
+      49.38805556
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q28703 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 U.S. parachute assault of the Normandy Invasion.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q28703 description"
+      }
+    ]
+  }
+}

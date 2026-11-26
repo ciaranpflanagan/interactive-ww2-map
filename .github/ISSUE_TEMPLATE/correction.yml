@@ -1,0 +1,22 @@
+name: Report a correction
+description: Something on the map is wrong, missing a source, or misleading.
+title: "Correction: "
+labels: [correction, data]
+body:
+  - type: input
+    id: event
+    attributes:
+      label: Event id
+      description: Shown in the URL of the "Raw record" link (e.g. omaha-beach).
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong?
+      description: Quote the text or number as it appears on the map.
+    validations: { required: true }
+  - type: textarea
+    id: source
+    attributes:
+      label: Source for the correction
+      description: Book (author, title, page), official history, archive document or URL. Corrections without a source can't be acted on.
+    validations: { required: true }

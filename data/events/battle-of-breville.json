@@ -1,0 +1,48 @@
+{
+  "id": "battle-of-breville",
+  "name": "Battle of Bréville",
+  "kind": "battle",
+  "parent": "operation-overlord",
+  "wikidata": "Q4870580",
+  "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Br%C3%A9ville",
+  "zoom": {
+    "min": 7
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-13",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q4870580 P585"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      0.22616389,
+      49.24029722
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q4870580 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 battle of the invasion of Normandy in WWII.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q4870580 description"
+      }
+    ]
+  }
+}

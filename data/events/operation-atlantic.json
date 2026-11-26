@@ -1,0 +1,49 @@
+{
+  "id": "operation-atlantic",
+  "name": "Operation Atlantic",
+  "kind": "operation",
+  "parent": "battle-for-caen",
+  "wikidata": "Q2165196",
+  "wikipedia": "https://en.wikipedia.org/wiki/Operation_Atlantic",
+  "zoom": {
+    "min": 5
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-07-18",
+    "end": "1944-07-21",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2165196 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.366667,
+      49.1833
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2165196 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "Military operation.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2165196 description"
+      }
+    ]
+  }
+}

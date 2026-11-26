@@ -1,0 +1,49 @@
+{
+  "id": "invasion-of-normandy",
+  "name": "Invasion of Normandy",
+  "kind": "operation",
+  "parent": "operation-overlord",
+  "wikidata": "Q16471",
+  "wikipedia": "https://en.wikipedia.org/wiki/Invasion_of_Normandy",
+  "zoom": {
+    "min": 5
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-06",
+    "end": "1944-07-01",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q16471 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.566666666,
+      49.333333333
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q16471 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 invasion and establishment of Western Allied forces in Normandy during WWII.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q16471 description"
+      }
+    ]
+  }
+}

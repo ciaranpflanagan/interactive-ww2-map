@@ -1,0 +1,9 @@
+{
+  "id": "wikidata",
+  "title": "Wikidata",
+  "publisher": "Wikimedia Foundation",
+  "url": "https://www.wikidata.org/",
+  "type": "database",
+  "license": "CC0 1.0",
+  "notes": "Cite with locator '<QID> <property>', e.g. 'Q464257 P625'. Treated as a lead, not an authority: Wikidata-only facts stay 'unreviewed' until corroborated."
+}

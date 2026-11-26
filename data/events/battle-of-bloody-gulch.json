@@ -1,0 +1,48 @@
+{
+  "id": "battle-of-bloody-gulch",
+  "name": "Battle of Bloody Gulch",
+  "kind": "battle",
+  "parent": "battle-of-carentan",
+  "wikidata": "Q4870503",
+  "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Bloody_Gulch",
+  "zoom": {
+    "min": 7
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-13",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q4870503 P585"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -1.280556,
+      49.294444
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q4870503 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 battle on the Western Front of World War II.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q4870503 description"
+      }
+    ]
+  }
+}

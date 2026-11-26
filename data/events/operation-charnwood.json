@@ -1,0 +1,49 @@
+{
+  "id": "operation-charnwood",
+  "name": "Operation Charnwood",
+  "kind": "operation",
+  "parent": "battle-for-caen",
+  "wikidata": "Q579936",
+  "wikipedia": "https://en.wikipedia.org/wiki/Operation_Charnwood",
+  "zoom": {
+    "min": 5
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-07-08",
+    "end": "1944-07-09",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q579936 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.3694,
+      49.1831
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q579936 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 Second World War Anglo-Canadian offensive.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q579936 description"
+      }
+    ]
+  }
+}

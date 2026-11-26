@@ -1,0 +1,11 @@
+name: Feature or improvement
+description: Suggest a change to the app.
+labels: [feature]
+body:
+  - type: textarea
+    id: what
+    attributes: { label: What should change, and why? }
+    validations: { required: true }
+  - type: textarea
+    id: done
+    attributes: { label: How will we know it's done? (acceptance criteria) }

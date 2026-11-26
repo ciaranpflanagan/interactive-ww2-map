@@ -1,0 +1,49 @@
+{
+  "id": "operation-goodwood",
+  "name": "Operation Goodwood",
+  "kind": "operation",
+  "parent": "battle-for-caen",
+  "wikidata": "Q2427503",
+  "wikipedia": "https://en.wikipedia.org/wiki/Operation_Goodwood",
+  "zoom": {
+    "min": 5
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-07-18",
+    "end": "1944-07-20",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2427503 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.2675,
+      49.1817
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2427503 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 World War II Allied military operation.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2427503 description"
+      }
+    ]
+  }
+}

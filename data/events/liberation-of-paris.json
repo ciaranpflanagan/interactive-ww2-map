@@ -1,0 +1,49 @@
+{
+  "id": "liberation-of-paris",
+  "name": "Liberation of Paris",
+  "kind": "battle",
+  "parent": "operation-overlord",
+  "wikidata": "Q696835",
+  "wikipedia": "https://en.wikipedia.org/wiki/Liberation_of_Paris",
+  "zoom": {
+    "min": 7
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-08-19",
+    "end": "1944-08-25",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q696835 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      2.29642,
+      48.8735
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q696835 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 military action that took place during World War II.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q696835 description"
+      }
+    ]
+  }
+}

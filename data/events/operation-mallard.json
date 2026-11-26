@@ -1,0 +1,48 @@
+{
+  "id": "operation-mallard",
+  "name": "Operation Mallard",
+  "kind": "operation",
+  "parent": "normandy-landings",
+  "wikidata": "Q7097261",
+  "wikipedia": "https://en.wikipedia.org/wiki/Operation_Mallard",
+  "zoom": {
+    "min": 5
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-06",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q7097261 P585"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.26792,
+      49.242111
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q7097261 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 British airborne operation.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q7097261 description"
+      }
+    ]
+  }
+}

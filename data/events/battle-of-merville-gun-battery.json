@@ -1,0 +1,48 @@
+{
+  "id": "battle-of-merville-gun-battery",
+  "name": "Battle of Merville Gun Battery",
+  "kind": "battle",
+  "parent": "normandy-landings",
+  "wikidata": "Q4871715",
+  "wikipedia": "https://en.wikipedia.org/wiki/Battle_of_Merville_Gun_Battery",
+  "zoom": {
+    "min": 7
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-06",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q4871715 P585"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.19638889,
+      49.27
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q4871715 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 battle part of Operation Tonga.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q4871715 description"
+      }
+    ]
+  }
+}

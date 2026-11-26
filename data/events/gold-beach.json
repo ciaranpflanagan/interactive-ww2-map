@@ -1,0 +1,47 @@
+{
+  "id": "gold-beach",
+  "name": "Gold Beach",
+  "kind": "landing",
+  "wikidata": "Q745883",
+  "wikipedia": "https://en.wikipedia.org/wiki/Gold_Beach",
+  "zoom": {
+    "min": 8
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-06",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q745883 P585"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.5673604,
+      49.3434406
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q745883 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "Landing area during Operation Overlord.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q745883 description"
+      }
+    ]
+  }
+}

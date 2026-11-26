@@ -1,0 +1,28 @@
+name: data-gate
+
+# Required check. Passes when a PR changes nothing under data/, or when the repository
+# owner has applied the `data:approved` label since the last push. Any new push to the PR
+# removes the label, so approval always covers the exact content being merged.
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  data-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: '${{ github.event.pull_request.base.sha }}' }  # run the gate script from the base branch, never from the PR
+      - run: bash .github/scripts/data-gate.sh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          OWNER: ${{ github.repository_owner }}
+          PR: ${{ github.event.pull_request.number }}
+          ACTION: ${{ github.event.action }}
+          IS_FORK: ${{ github.event.pull_request.head.repo.full_name != github.repository }}

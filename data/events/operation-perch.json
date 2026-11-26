@@ -1,0 +1,49 @@
+{
+  "id": "operation-perch",
+  "name": "Operation Perch",
+  "kind": "operation",
+  "parent": "battle-for-caen",
+  "wikidata": "Q2643015",
+  "wikipedia": "https://en.wikipedia.org/wiki/Operation_Perch",
+  "zoom": {
+    "min": 5
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-06-07",
+    "end": "1944-06-14",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2643015 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.66,
+      49.08
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2643015 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 British offensive of the Second World War.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2643015 description"
+      }
+    ]
+  }
+}

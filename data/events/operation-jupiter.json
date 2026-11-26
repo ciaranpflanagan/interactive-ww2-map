@@ -1,0 +1,49 @@
+{
+  "id": "operation-jupiter",
+  "name": "Operation Jupiter",
+  "kind": "operation",
+  "parent": "battle-for-caen",
+  "wikidata": "Q2998523",
+  "wikipedia": "https://en.wikipedia.org/wiki/Operation_Jupiter_(1944)",
+  "zoom": {
+    "min": 5
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+  },
+  "time": {
+    "start": "1944-07-10",
+    "end": "1944-07-11",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2998523 P580 / P582"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.46,
+      49.12361111
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2998523 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "1944 British offensive during WWII.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2998523 description"
+      }
+    ]
+  }
+}
