@@ -9,79 +9,733 @@
     "min": 8
   },
   "review": {
-    "status": "agent-checked",
-    "notes": "Summary, parent and participants revised for issue #2 (previously a Wikidata description). Official histories (Harrison, Cross-Channel Attack; Ellis, Victory in the West vol. I; Stacey, The Victory Campaign) could not be fetched from the drafting session: the network proxy refused www.ibiblio.org, www.canada.ca and history.army.mil. Cites are therefore to English Wikipedia at a pinned revision, used only for uncontroversial facts (assaulting formation, location, objectives); they should be upgraded to the official histories once those can be read. Geometry unchanged: Wikidata representative point. Sources checked 2026-11-27 by an independent check-sources agent for PR #8: every cite, quote and section locator verified against the pinned Wikipedia revisions and the Wikidata statements; no history.army.mil citations are present."
+    "status": "unreviewed",
+    "notes": "Taken to issue #11 depth (polygon, sector children, wave times, units, casualties, modern places). Sources read: English Wikipedia \"Utah Beach\" (rev. 1372907065) and \"Normandy landings\" (rev. 1386946425); Map VII of the official history Utah Beach to Cherbourg, read as the public-domain scan on Wikimedia Commons; Wikidata items for the present-day places; OSM data as served by OpenFreeMap tiles. The text of Utah Beach to Cherbourg and Cross-Channel Attack could not be read (history.army.mil 403 per #3; www.ibiblio.org, archive.org, www.openstreetmap.org, www.abmc.gov, www.utah-beach.com and fr.wikipedia.org refused by the session proxy), so every claim from the books Wikipedia cites (Balkoski 2005; Ford & Zaloga 2009; Whitmarsh 2009) is verified only as far as Wikipedia. Geometry derivation: Map VII of Utah Beach to Cherbourg (Commons scan, 1844x1142 px) has a 500-yard scale bar (163 px, so about 2.8 m per pixel) and a north arrow. On it, Uncle Red and Tare Green as established on D-Day meet at the Exit 2 road, Uncle Red running about 266 px (about 750 m) south of it and Tare Green about 263 px (about 740 m) north. As planned, Uncle Red ran from 424 px to 752 px and Tare Green from 752 px to 1122 px north of Exit 2. Exit 2 (Causeway 2, towards Sainte-Marie-du-Mont) was matched to the present-day D913, which meets the coast road at -1.17687, 49.4151; that point was projected onto the present-day OSM coastline and the map distances were laid off along the coastline from there. Seaward depth is the distance from the high-water mark to the low-water mark measured on Map VII at each sector boundary (about 0.8 to 1.4 km), applied perpendicular to the general line of the coast (bearing 319 degrees). Cross-check: Map VII's Exit 3 road, transformed the same way, falls within about 80 m of the point where the present-day D67 meets the coast. Accuracy is \"approximate\" because the 1944 map was georeferenced by hand from one road junction, a scale bar and the modern coastline, and the 1944 high- and low-water lines are not today's. Open questions: (1) Casualties: the issue asks for a range, but every readable source gives the same 197 for the 4th Infantry Division (Utah Beach and Normandy landings both cite Whitmarsh p. 51 and Ford & Zaloga p. 165), so no range and no \"disputed\" flag were recorded. Utah Beach to Cherbourg's own casualty count should be checked when its text can be read. (2) The Utah Beach infobox gives airborne casualties as \"c. 2,499\" while its text gives 2,500 (both Balkoski p. 331); 2,499 is also the Normandy landings article's count of American D-Day deaths, so the infobox figure may be a mix-up; the text figure is used. (3) The Wikipedia text calls the first-wave companies (B, C, E, F) \"four companies from the 2nd Battalion\" but then puts Companies A and D in the 1st Battalion; Map VII only labels them \"Cos 8th Inf\", so no battalion is given here for the first wave. (4) The wave times are from Wikipedia; Map VII gives the same schedule relative to H-Hour (H+5, H+15, H+17) but no clock time. (5) Left out: the Monument to the Fallen Danish Sailors (Wikidata Q108628151), whose Wikidata coordinate is about 2 km inland of the beach and could not be checked; the museum website (www.utah-beach.com, refused by the proxy)."
   },
   "time": {
-    "start": "1944-06-06",
-    "precision": "day",
+    "start": "1944-06-06T06:30",
+    "precision": "minute",
     "cite": [
       {
         "source": "wikipedia",
-        "locator": "Utah Beach § lead (revision 1372907065)",
-        "quote": "in the Normandy landings on June 6, 1944 (D-Day)"
+        "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+        "quote": "The first troops to reach the shore were four companies from the 2nd Battalion, 8th Infantry, arriving at 06:30 on 20 LCVPs."
       },
       {
-        "source": "wikidata",
-        "locator": "Q757273 P585"
+        "source": "wikipedia",
+        "locator": "Utah Beach § Allied planning › Plan of attack (revision 1372907065)",
+        "quote": "The amphibious landing was planned in four waves, beginning at 06:30."
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Normandy landings § Beach landings › Utah Beach (revision 1386946425)",
+        "quote": "Members of the 8th Infantry Regiment of the 4th Infantry Division were the first to land, arriving at 06:30."
       }
     ]
   },
   "geometry": {
-    "type": "Point",
+    "type": "Polygon",
     "coordinates": [
-      -1.174722222,
-      49.415833333
+      [
+        [
+          -1.16882,
+          49.41054
+        ],
+        [
+          -1.16985,
+          49.41161
+        ],
+        [
+          -1.17088,
+          49.41268
+        ],
+        [
+          -1.17208,
+          49.41368
+        ],
+        [
+          -1.17311,
+          49.41474
+        ],
+        [
+          -1.17419,
+          49.41579
+        ],
+        [
+          -1.17528,
+          49.41684
+        ],
+        [
+          -1.17636,
+          49.41789
+        ],
+        [
+          -1.17743,
+          49.41895
+        ],
+        [
+          -1.17855,
+          49.41997
+        ],
+        [
+          -1.17965,
+          49.42101
+        ],
+        [
+          -1.18076,
+          49.42205
+        ],
+        [
+          -1.18188,
+          49.42309
+        ],
+        [
+          -1.18299,
+          49.42413
+        ],
+        [
+          -1.1841,
+          49.42516
+        ],
+        [
+          -1.18521,
+          49.4262
+        ],
+        [
+          -1.18632,
+          49.42724
+        ],
+        [
+          -1.18743,
+          49.42828
+        ],
+        [
+          -1.18854,
+          49.42932
+        ],
+        [
+          -1.18977,
+          49.4303
+        ],
+        [
+          -1.19104,
+          49.43126
+        ],
+        [
+          -1.19228,
+          49.43223
+        ],
+        [
+          -1.19352,
+          49.4332
+        ],
+        [
+          -1.19476,
+          49.43418
+        ],
+        [
+          -1.196,
+          49.43515
+        ],
+        [
+          -1.19722,
+          49.43614
+        ],
+        [
+          -1.19843,
+          49.43713
+        ],
+        [
+          -1.19971,
+          49.43808
+        ],
+        [
+          -1.20069,
+          49.4388
+        ],
+        [
+          -1.19233,
+          49.44356
+        ],
+        [
+          -1.19136,
+          49.44283
+        ],
+        [
+          -1.19009,
+          49.44188
+        ],
+        [
+          -1.18889,
+          49.44088
+        ],
+        [
+          -1.18769,
+          49.43988
+        ],
+        [
+          -1.18646,
+          49.4389
+        ],
+        [
+          -1.18523,
+          49.43792
+        ],
+        [
+          -1.184,
+          49.43694
+        ],
+        [
+          -1.18273,
+          49.43599
+        ],
+        [
+          -1.18135,
+          49.43509
+        ],
+        [
+          -1.18002,
+          49.43417
+        ],
+        [
+          -1.1788,
+          49.43319
+        ],
+        [
+          -1.17758,
+          49.43222
+        ],
+        [
+          -1.17637,
+          49.43124
+        ],
+        [
+          -1.17515,
+          49.43026
+        ],
+        [
+          -1.17379,
+          49.42936
+        ],
+        [
+          -1.1724,
+          49.42848
+        ],
+        [
+          -1.171,
+          49.42761
+        ],
+        [
+          -1.1695,
+          49.42679
+        ],
+        [
+          -1.16795,
+          49.426
+        ],
+        [
+          -1.16637,
+          49.42524
+        ],
+        [
+          -1.16485,
+          49.42445
+        ],
+        [
+          -1.16332,
+          49.42365
+        ],
+        [
+          -1.16177,
+          49.42286
+        ],
+        [
+          -1.16021,
+          49.42208
+        ],
+        [
+          -1.1587,
+          49.42129
+        ],
+        [
+          -1.15704,
+          49.42057
+        ],
+        [
+          -1.15553,
+          49.41976
+        ],
+        [
+          -1.15402,
+          49.41896
+        ],
+        [
+          -1.16882,
+          49.41054
+        ]
+      ]
     ],
-    "accuracy": "representative",
+    "accuracy": "approximate",
     "cite": [
       {
-        "source": "wikidata",
-        "locator": "Q757273 P625"
+        "source": "cmh-utah-beach-to-cherbourg",
+        "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (beaches as planned and as established on D-Day; scale bar; high- and low-water marks)",
+        "quote": "Beaches as established on D Day"
+      },
+      {
+        "source": "osm",
+        "locator": "natural=coastline near Sainte-Marie-du-Mont, read from the OpenFreeMap vector tiles (planet build 2026-11-22) because openstreetmap.org was refused by the session proxy; used only as the inner (high-water) edge of the polygon"
       }
     ]
   },
   "summary": {
-    "text": "The westernmost of the five D-Day landing beaches, on the Cotentin Peninsula west of the mouths of the Douve and Vire rivers. It was assaulted by the US 4th Infantry Division with the 70th Tank Battalion, supported by the 82nd and 101st Airborne Divisions landing inland. The aim was a beachhead from which to seal off the Cotentin Peninsula and take the port of Cherbourg quickly.",
+    "text": "The westernmost of the five D-Day landing beaches, on the east coast of the Cotentin Peninsula west of the mouths of the Douve and Vire rivers. The US 4th Infantry Division, with the 70th Tank Battalion, made the seaborne assault; the 82nd and 101st Airborne Divisions had landed inland during the night to hold the causeways across the flooded ground behind the beach. The aim was to seal off the Cotentin Peninsula and take the port of Cherbourg quickly. The 8th Infantry Regiment landed first, in four waves from 06:30, on the beaches code-named Tare Green and Uncle Red. Strong currents set the craft down about 2,000 yards (1.8 km) south of the planned beaches, to a stretch near Exit 2 with only one strongpoint close by. Brigadier General Theodore Roosevelt Jr., the first senior officer ashore, decided to land the follow-up waves there rather than move the assault. Engineers and tank dozers cleared obstacles before the tide came in, the landing area was almost secure by 08:30, and the infantry then moved inland along the causeways to meet the airborne troops. German losses are unknown.",
     "cite": [
       {
         "source": "wikipedia",
         "locator": "Utah Beach § lead (revision 1372907065)",
         "quote": "The westernmost of the five code-named landing beaches in Normandy"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+        "quote": "they found themselves near Exit 2 at Grande Dune, about 2,000 yards"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+        "quote": "he ordered further landings to be re-routed"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+        "quote": "The landing area was almost totally secure by 08:30"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+        "quote": "a job that had to be performed quickly before the tide came in at 10:30"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Utah Beach § D-Day (June 6, 1944) › Moving inland (revision 1372907065)"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Utah Beach § Result (revision 1372907065)",
+        "quote": "German losses are unknown."
+      },
+      {
+        "source": "cmh-utah-beach-to-cherbourg",
+        "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (beaches as planned and as established on D-Day)"
       }
     ]
   },
   "participants": [
     {
-      "name": "US 4th Infantry Division",
+      "name": "US 4th Infantry Division (Maj. Gen. Raymond O. Barton)",
       "side": "allied",
-      "role": "Amphibious assault",
+      "role": "Seaborne assault",
       "cite": [
         {
           "source": "wikipedia",
           "locator": "Utah Beach § lead (revision 1372907065)"
+        },
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § Units (revision 1372907065)"
+        }
+      ]
+    },
+    {
+      "name": "US 8th Infantry Regiment (4th Infantry Division)",
+      "side": "allied",
+      "role": "First and second assault waves, on Tare Green and Uncle Red",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+          "quote": "Companies B and C landed on the segment code-named Tare Green, and Companies E and F to their left on Uncle Red."
+        },
+        {
+          "source": "cmh-utah-beach-to-cherbourg",
+          "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (wave table)",
+          "quote": "Cos 8th Inf"
         }
       ]
     },
     {
       "name": "US 70th Tank Battalion",
       "side": "allied",
-      "role": "Amphibious assault",
+      "role": "DD amphibious tanks, Shermans and tank dozers in the first and third waves",
       "cite": [
         {
           "source": "wikipedia",
-          "locator": "Utah Beach § lead (revision 1372907065)"
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)"
+        },
+        {
+          "source": "cmh-utah-beach-to-cherbourg",
+          "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (wave table)",
+          "quote": "Co A 70th Tk Bn"
         }
       ]
     },
     {
-      "name": "German 919th Grenadier Regiment (709th Static Infantry Division)",
-      "side": "axis",
-      "role": "Defence of the beach area",
+      "name": "US 237th and 299th Engineer Combat Battalions (detachments)",
+      "side": "allied",
+      "role": "Fourth wave: clearing beach obstacles between the high- and low-water marks",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+          "quote": "detachments of the 237th and 299th Combat Engineer Battalions"
+        },
+        {
+          "source": "cmh-utah-beach-to-cherbourg",
+          "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (wave table)",
+          "quote": "Det 237th Engr C Bn"
+        }
+      ]
+    },
+    {
+      "name": "US 22nd Infantry Regiment, 3rd Battalion (4th Infantry Division)",
+      "side": "allied",
+      "role": "Cleared strongpoints northward along the beach",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Moving inland (revision 1372907065)"
+        }
+      ]
+    },
+    {
+      "name": "US 12th Infantry Regiment (4th Infantry Division)",
+      "side": "allied",
+      "role": "Crossed the flooded fields to the northern end of the beachhead",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Moving inland (revision 1372907065)"
+        }
+      ]
+    },
+    {
+      "name": "US 4th Cavalry Regiment (raiding party)",
+      "side": "allied",
+      "role": "Landed on the unoccupied Îles Saint-Marcouf at 04:30",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) (revision 1372907065)",
+          "quote": "swam ashore at 04:30"
+        }
+      ]
+    },
+    {
+      "name": "US 82nd and 101st Airborne Divisions",
+      "side": "allied",
+      "role": "Airborne landings inland of the beach, from about 01:30",
       "cite": [
         {
           "source": "wikipedia",
           "locator": "Utah Beach § lead (revision 1372907065)"
+        },
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) (revision 1372907065)"
+        }
+      ]
+    },
+    {
+      "name": "US 90th Infantry Division",
+      "side": "allied",
+      "role": "Follow-up division, began landing at 16:00 on D-Day",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Moving inland (revision 1372907065)",
+          "quote": "who began disembarking at 16:00 on D-Day"
+        }
+      ]
+    },
+    {
+      "name": "German 919th Grenadier Regiment (709th Static Infantry Division, Generalleutnant Karl-Wilhelm von Schlieben)",
+      "side": "axis",
+      "role": "Two battalions defending the beach area",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § lead (revision 1372907065)"
+        },
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § Units (revision 1372907065)"
+        }
+      ]
+    },
+    {
+      "name": "German 6th Parachute (Fallschirmjäger) Regiment",
+      "side": "axis",
+      "role": "Inland reserve; defended around Sainte-Marie-du-Mont and blocked the 501st Parachute Infantry near Saint-Côme-du-Mont",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Moving inland (revision 1372907065)"
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "label": "H-Hour (first wave lands)",
+      "value": "06:30",
+      "side": "US",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+          "quote": "arriving at 06:30 on 20 LCVPs"
+        },
+        {
+          "source": "cmh-utah-beach-to-cherbourg",
+          "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (wave table)",
+          "quote": "H-Hour"
+        }
+      ]
+    },
+    {
+      "label": "Second wave",
+      "value": "06:35 (H+5)",
+      "side": "US",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+          "quote": "The second wave of assault troops arrived at 06:35 on 32 LCVPs."
+        },
+        {
+          "source": "cmh-utah-beach-to-cherbourg",
+          "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (wave table)",
+          "quote": "H + 5"
+        }
+      ]
+    },
+    {
+      "label": "Third wave",
+      "value": "06:45 (H+15)",
+      "side": "US",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+          "quote": "The third wave, arriving at 06:45, included 16 conventional M4 Sherman tanks and 8 dozer tanks of the 70th Tank Battalion."
+        },
+        {
+          "source": "cmh-utah-beach-to-cherbourg",
+          "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (wave table)",
+          "quote": "H + 15"
+        }
+      ]
+    },
+    {
+      "label": "Fourth wave",
+      "value": "06:47 (H+17)",
+      "side": "US",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+          "quote": "They were followed at 06:47 by the fourth wave"
+        },
+        {
+          "source": "cmh-utah-beach-to-cherbourg",
+          "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (wave table)",
+          "quote": "H + 17"
+        }
+      ]
+    },
+    {
+      "label": "Landing area almost secure",
+      "value": "08:30",
+      "side": "US",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+          "quote": "The landing area was almost totally secure by 08:30"
+        }
+      ]
+    },
+    {
+      "label": "Distance landed south of the planned beaches",
+      "value": "about 2,000 yards (1.8 km)",
+      "low": 2000,
+      "high": 2000,
+      "side": "US",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+          "quote": "they found themselves near Exit 2 at Grande Dune, about 2,000 yards"
+        }
+      ]
+    },
+    {
+      "label": "DD tanks landed (70th Tank Battalion)",
+      "value": "28 of 32",
+      "low": 28,
+      "high": 28,
+      "side": "US",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+          "quote": "A contingent of the 70th Tank Battalion, comprising 32 amphibious DD tanks on eight LCTs"
+        },
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+          "quote": "the remaining 28 arrived intact"
+        }
+      ]
+    },
+    {
+      "label": "Troops landed (4th Infantry Division)",
+      "value": "21,000",
+      "low": 21000,
+      "high": 21000,
+      "side": "US",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § lead (revision 1372907065)",
+          "quote": "The 4th Infantry Division landed 21,000 troops on Utah at the cost of only 197 casualties."
+        },
+        {
+          "source": "wikipedia",
+          "locator": "Normandy landings § Beach landings › Utah Beach (revision 1386946425)",
+          "quote": "they landed 21,000 troops at the cost of only 197 casualties"
+        }
+      ]
+    },
+    {
+      "label": "Casualties, 4th Infantry Division (D-Day)",
+      "value": "197",
+      "low": 197,
+      "high": 197,
+      "side": "US",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § Result (revision 1372907065)",
+          "quote": "They suffered 197 casualties."
+        },
+        {
+          "source": "wikipedia",
+          "locator": "Normandy landings § Beach landings › Utah Beach (revision 1386946425)",
+          "quote": "they landed 21,000 troops at the cost of only 197 casualties"
+        }
+      ]
+    },
+    {
+      "label": "Casualties, 82nd and 101st Airborne Divisions (D-Day)",
+      "value": "c. 2,500",
+      "low": 2500,
+      "high": 2500,
+      "side": "US",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § Result (revision 1372907065)",
+          "quote": "Airborne troops arriving by parachute and glider numbered an additional 14,000 men, with 2,500 casualties."
+        }
+      ]
+    },
+    {
+      "label": "Losses, other US units (engineers, 70th Tank Battalion, craft sunk)",
+      "value": "c. 700",
+      "low": 700,
+      "high": 700,
+      "side": "US",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § Result (revision 1372907065)",
+          "quote": "Around 700 men were lost in engineering units, the 70th Tank Battalion, and LCTs and other vessels sunk by the enemy."
+        }
+      ]
+    },
+    {
+      "label": "German losses",
+      "value": "Unknown",
+      "side": "German",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § Result (revision 1372907065)",
+          "quote": "German losses are unknown."
+        }
+      ]
+    }
+  ],
+  "modern": [
+    {
+      "name": "Utah Beach Museum (Musée du débarquement Utah Beach)",
+      "kind": "museum",
+      "coordinates": [
+        -1.17463,
+        49.41536
+      ],
+      "osm": "way/101185917",
+      "cite": [
+        {
+          "source": "osm",
+          "locator": "way/101185917, label point as served by the OpenFreeMap vector tiles (planet build 2026-11-22), feature named \"Musée du débarquement Utah Beach\", class museum"
+        },
+        {
+          "source": "wikidata",
+          "locator": "Q18380084 P10689"
+        },
+        {
+          "source": "wikipedia",
+          "locator": "Normandy landings § War memorials and tourism (revision 1386946425)",
+          "quote": "A museum about the Utah landings is located at Sainte-Marie-du-Mont"
+        }
+      ]
+    },
+    {
+      "name": "Federal Monument of the United States of America (Utah Beach)",
+      "kind": "memorial",
+      "coordinates": [
+        -1.175843,
+        49.416072
+      ],
+      "cite": [
+        {
+          "source": "wikidata",
+          "locator": "Q3159110 P625"
+        },
+        {
+          "source": "wikidata",
+          "locator": "Q3159110 P276"
+        }
+      ]
+    },
+    {
+      "name": "US Navy Monument",
+      "kind": "memorial",
+      "coordinates": [
+        -1.175221,
+        49.416018
+      ],
+      "cite": [
+        {
+          "source": "wikidata",
+          "locator": "Q108628156 P625"
+        },
+        {
+          "source": "wikidata",
+          "locator": "Q108628156 P131"
         }
       ]
     }

@@ -1,0 +1,268 @@
+{
+  "id": "utah-beach-tare-green",
+  "name": "Tare Green (Utah Beach)",
+  "kind": "landing",
+  "parent": "utah-beach",
+  "zoom": {
+    "min": 12
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Drafted for #11. The polygon is the sector as established on D-Day (where the assault actually landed), not as planned. Geometry derivation: Map VII of Utah Beach to Cherbourg (Commons scan, 1844x1142 px) has a 500-yard scale bar (163 px, so about 2.8 m per pixel) and a north arrow. On it, Uncle Red and Tare Green as established on D-Day meet at the Exit 2 road, Uncle Red running about 266 px (about 750 m) south of it and Tare Green about 263 px (about 740 m) north. As planned, Uncle Red ran from 424 px to 752 px and Tare Green from 752 px to 1122 px north of Exit 2. Exit 2 (Causeway 2, towards Sainte-Marie-du-Mont) was matched to the present-day D913, which meets the coast road at -1.17687, 49.4151; that point was projected onto the present-day OSM coastline and the map distances were laid off along the coastline from there. Seaward depth is the distance from the high-water mark to the low-water mark measured on Map VII at each sector boundary (about 0.8 to 1.4 km), applied perpendicular to the general line of the coast (bearing 319 degrees). Cross-check: Map VII's Exit 3 road, transformed the same way, falls within about 80 m of the point where the present-day D67 meets the coast. Accuracy is \"approximate\" because the 1944 map was georeferenced by hand from one road junction, a scale bar and the modern coastline, and the 1944 high- and low-water lines are not today's. Company and wave allocations for tanks and engineers come from Map VII, which shows the landing plan as of 24 May 1944; Wikipedia confirms the rifle companies landed as planned on each beach, but no readable source says whether the tank and engineer detachments landed on the beach the plan gave them. Books Wikipedia cites (Ford & Zaloga 2009; Balkoski 2005) could not be read; see utah-beach.json for the hosts that were refused."
+  },
+  "time": {
+    "start": "1944-06-06T06:30",
+    "precision": "minute",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+        "quote": "arriving at 06:30 on 20 LCVPs"
+      },
+      {
+        "source": "cmh-utah-beach-to-cherbourg",
+        "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (wave table)",
+        "quote": "H-Hour"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -1.17454,
+          49.41612
+        ],
+        [
+          -1.17509,
+          49.41665
+        ],
+        [
+          -1.17563,
+          49.41717
+        ],
+        [
+          -1.17617,
+          49.4177
+        ],
+        [
+          -1.1767,
+          49.41823
+        ],
+        [
+          -1.17723,
+          49.41876
+        ],
+        [
+          -1.1778,
+          49.41927
+        ],
+        [
+          -1.17836,
+          49.41978
+        ],
+        [
+          -1.17889,
+          49.4203
+        ],
+        [
+          -1.17945,
+          49.42082
+        ],
+        [
+          -1.18001,
+          49.42134
+        ],
+        [
+          -1.18029,
+          49.42161
+        ],
+        [
+          -1.17041,
+          49.42724
+        ],
+        [
+          -1.17001,
+          49.42704
+        ],
+        [
+          -1.16922,
+          49.42665
+        ],
+        [
+          -1.16844,
+          49.42626
+        ],
+        [
+          -1.16768,
+          49.42586
+        ],
+        [
+          -1.16689,
+          49.42548
+        ],
+        [
+          -1.1661,
+          49.4251
+        ],
+        [
+          -1.16533,
+          49.4247
+        ],
+        [
+          -1.16457,
+          49.4243
+        ],
+        [
+          -1.16381,
+          49.4239
+        ],
+        [
+          -1.16304,
+          49.42351
+        ],
+        [
+          -1.16227,
+          49.42311
+        ],
+        [
+          -1.17454,
+          49.41612
+        ]
+      ]
+    ],
+    "accuracy": "approximate",
+    "cite": [
+      {
+        "source": "cmh-utah-beach-to-cherbourg",
+        "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (Tare Green bracket, beaches as established on D-Day)",
+        "quote": "Beaches as established on D Day"
+      },
+      {
+        "source": "osm",
+        "locator": "natural=coastline near Sainte-Marie-du-Mont, read from the OpenFreeMap vector tiles (planet build 2026-11-22) because openstreetmap.org was refused by the session proxy; used only as the inner (high-water) edge of the polygon"
+      }
+    ]
+  },
+  "summary": {
+    "text": "The right-hand (northern) of the two assault beaches at Utah. As planned, Tare Green lay opposite the strongpoint at Les Dunes de Varreville, but currents carried the landing craft south and the beach was established north of Exit 2 instead. Companies B and C of the 8th Infantry landed here in the first wave at 06:30 and Companies A and D in the second. Company B moved on strongpoint WN7 near La Madeleine, the headquarters of the 3rd Battalion, 919th Grenadier Regiment, and met little resistance there; Company C put out of action strongpoint WN5 at La Grande Dune, which the preliminary bombardment had badly damaged.",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Utah Beach § Allied planning › Plan of attack (revision 1372907065)",
+        "quote": "The ten craft on the right were to land on Tare Green beach"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+        "quote": "they found themselves near Exit 2 at Grande Dune, about 2,000 yards"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+        "quote": "Companies B and C landed on the segment code-named Tare Green"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+        "quote": "They met little resistance at WN7, the headquarters of 3rd Battalion, 919th Grenadiers."
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+        "quote": "Company C disabled the enemy strongpoint WN5 at La Grande Dune"
+      },
+      {
+        "source": "cmh-utah-beach-to-cherbourg",
+        "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (Tare Green bracket, beaches as planned and as established on D-Day)"
+      }
+    ]
+  },
+  "facts": [
+    {
+      "label": "Landing craft, first wave (planned)",
+      "value": "10 LCVPs",
+      "low": 10,
+      "high": 10,
+      "side": "US",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § Allied planning › Plan of attack (revision 1372907065)",
+          "quote": "The ten craft on the right were to land on Tare Green beach"
+        }
+      ]
+    }
+  ],
+  "participants": [
+    {
+      "name": "US 8th Infantry Regiment, Companies B and C",
+      "side": "allied",
+      "role": "First wave, H-Hour (06:30)",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+          "quote": "Companies B and C landed on the segment code-named Tare Green, and Companies E and F to their left on Uncle Red."
+        },
+        {
+          "source": "cmh-utah-beach-to-cherbourg",
+          "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (wave table, 1st Wave)"
+        }
+      ]
+    },
+    {
+      "name": "US 8th Infantry Regiment, Companies A and D",
+      "side": "allied",
+      "role": "Second wave, H+5 (06:35)",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+          "quote": "Companies A and D of 1st Battalion, 8th Infantry landed on Tare Green and G and H on Uncle Red."
+        },
+        {
+          "source": "cmh-utah-beach-to-cherbourg",
+          "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (wave table, 2d Wave)"
+        }
+      ]
+    },
+    {
+      "name": "US 70th Tank Battalion, Company A",
+      "side": "allied",
+      "role": "DD tanks, planned to land at H-Hour or as soon after as possible (Map VII plan)",
+      "cite": [
+        {
+          "source": "cmh-utah-beach-to-cherbourg",
+          "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (wave table, 1st A Wave)",
+          "quote": "Co A 70th Tk Bn"
+        }
+      ]
+    },
+    {
+      "name": "US 70th Tank Battalion, Company C",
+      "side": "allied",
+      "role": "Third wave, H+15 (Map VII plan)",
+      "cite": [
+        {
+          "source": "cmh-utah-beach-to-cherbourg",
+          "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (wave table, 3d Wave)",
+          "quote": "Co C 70th Tk Bn"
+        }
+      ]
+    },
+    {
+      "name": "US 299th Engineer Combat Battalion (detachment)",
+      "side": "allied",
+      "role": "Fourth wave, H+17: obstacle clearance (Map VII plan)",
+      "cite": [
+        {
+          "source": "cmh-utah-beach-to-cherbourg",
+          "locator": "Map VII, \"Utah Beach: 8th Infantry Landing Plan\" (wave table, 4th Wave)",
+          "quote": "Det 299th Engr C Bn"
+        }
+      ]
+    }
+  ]
+}
