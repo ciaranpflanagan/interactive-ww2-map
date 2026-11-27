@@ -11,11 +11,14 @@ REPO="${1:?usage: bootstrap.sh <owner/repo> [location]}"
 LOCATION="${2:-westeurope}"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 
+OWNER_ID=$(gh api "repos/$REPO" --jq .owner.id)
+REPO_ID=$(gh api "repos/$REPO" --jq .id)
+
 out=$(az deployment sub create \
   --name ww2-map-bootstrap \
   --location "$LOCATION" \
   --template-file "$HERE/main.bicep" \
-  --parameters githubRepo="$REPO" location="$LOCATION" \
+  --parameters githubRepo="$REPO" githubOwnerId="$OWNER_ID" githubRepoId="$REPO_ID" location="$LOCATION" \
   --query properties.outputs -o json)
 
 get() { echo "$out" | python3 -c "import sys,json;print(json.load(sys.stdin)['$1']['value'])"; }
