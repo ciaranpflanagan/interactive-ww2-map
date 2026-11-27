@@ -32,6 +32,8 @@ The maintainer edits this file to steer the factory.
 - [ ] Clustering and declutter at low zoom; panel must not cover the selected marker
 - [ ] Accessibility pass (keyboard, screen reader labels, contrast); dark-mode map style
 - [ ] Code-split MapLibre (bundle > 500 kB)
+- [ ] Let `modern` entries carry cited `facts` (e.g. the Normandy American Cemetery's burials and Wall of the Missing). Schema change, needs the maintainer
+- [ ] Upgrade GitHub Actions off Node 20 (`actions/checkout`, `actions/setup-node`, `azure/login`, `actions/upload-artifact`); GitHub warns they are deprecated
 
 ## M5 Beyond Normandy (needs maintainer decision on order)
 - [ ] Generalise the importer roots and scope label; next theatre TBD

@@ -1,6 +1,6 @@
 ---
 name: review-pr
-description: Independently review a code PR, fix or request fixes, and mark it review:passed so automerge can merge it. Use when invoked as /review-pr #N.
+description: Independently review a code PR, fix or request fixes, and mark it review:passed so automerge can merge it. Use when invoked as /review-pr #N or asked to use the review-pr skill.
 ---
 
 # Review a code PR
