@@ -1,6 +1,6 @@
 ---
 name: build-feature
-description: Implement one app/code GitHub issue end to end and open a PR. Use when invoked as /build-feature #N, or asked to fix CI or address review on a code PR.
+description: Implement one app/code GitHub issue end to end and open a PR. Use when invoked as /build-feature #N, asked to use the build-feature skill, or asked to fix CI or address review on a code PR.
 ---
 
 # Build a feature from an issue

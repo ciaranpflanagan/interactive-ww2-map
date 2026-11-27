@@ -1,6 +1,6 @@
 ---
 name: check-sources
-description: Independently verify every citation in a data PR against its source, fix or remove unsupported claims, and prepare the PR for the maintainer. Use when invoked as /check-sources #N (N = PR number).
+description: Independently verify every citation in a data PR against its source, fix or remove unsupported claims, and prepare the PR for the maintainer. Use when invoked as /check-sources #N (N = PR number) or asked to use the check-sources skill.
 ---
 
 # Check sources (independent verifier)
@@ -20,5 +20,7 @@ You did not write this PR. Don't trust its PR body; trust only what you fetch.
 4. If every remaining claim is supported, set `review.status` to `"agent-checked"` on those records. Otherwise leave them `"unreviewed"`.
 5. `npm run data:validate && npm run check` must pass. Push.
 6. Comment on the PR with a verification table (claim | source | locator | verdict | note) and a summary of the
-   fixes you made. Add the `needs-human` label so the maintainer knows it's ready for their decision.
-   Never apply `data:approved`.
+   fixes you made. Start the comment with the line `<!-- check-sources -->` so the foreman can tell the check ran.
+   Add the `needs-human` label so the maintainer knows it's ready for their decision.
+   Never apply `data:approved`. If the maintainer had already applied it and you pushed fixes, the gate removed it;
+   say so in your comment so they know to re-approve.

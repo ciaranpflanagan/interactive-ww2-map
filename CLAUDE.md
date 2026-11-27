@@ -30,8 +30,12 @@ Roles live in `.claude/skills/`: `foreman` plans and dispatches work. The worker
 3. **Tertiary sources:** Wikipedia, encyclopedias. Acceptable as a lead and for uncontroversial facts. Better: cite the reference Wikipedia cites, after reading it.
 4. **Databases:** Wikidata, OSM. Good for identifiers and present-day locations. Wikidata-only historical facts stay `unreviewed`.
 
-Register every source once in `data/sources/<id>.json` before citing it. Check the URL resolves; if it can't be
-fetched, say so in `notes` (see `cmh-*.json`).
+Register every source once in `data/sources/<id>.json` before citing it. **Every URL must come from a page you actually
+fetched in this session**, never from memory or a guessed pattern: two such guesses broke the US Army source links.
+A link cited by Wikipedia can also be dead, so fetch it too. If it can't be fetched, say so in `notes` (see `cmh-*.json`).
+
+Wikipedia and Wikidata rate-limit this environment when several agents use them at once. Space out requests, and on
+HTTP 429 wait and retry a few times instead of switching to memory.
 
 ## Data model
 
@@ -62,6 +66,10 @@ fetched, say so in `notes` (see `cmh-*.json`).
 - Work arrives as GitHub issues. Branch `agent/<issue>-<slug>`, one issue per PR, PR body says `Closes #<n>`.
 - Small PRs. If an issue turns out big, finish a coherent slice and open follow-up issues.
 - Labels: `agent:ready`, `agent:in-progress`, `needs-human`, `review:passed`, `data`, `feature`, `bug`, `correction`, `infra`, `epic`.
+- `needs-human` is the maintainer's to-do list. Add it to anything only they can move forward (a decision, a data PR
+  verified by check-sources, a PR touching protected paths). Don't add it to anything that agents can still progress.
+- Data PRs flow: `research-event` opens it → it starts `check-sources` → the checker adds `needs-human` → maintainer
+  applies `data:approved` and merges.
 - Merging: code PRs merge automatically once CI is green and `review:passed` is set (`.github/workflows/automerge.yml`).
   PRs touching `data/`, `schema/`, `.github/`, `infra/`, `.claude/`, `CLAUDE.md` or `package-lock.json` always wait for the maintainer.
 - Azure resources are created only from `infra/**/*.bicep`. Never use the portal, and never create resources from CLI commands.
