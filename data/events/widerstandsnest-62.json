@@ -1,0 +1,141 @@
+{
+  "id": "widerstandsnest-62",
+  "name": "Widerstandsnest 62 (WN-62)",
+  "kind": "other",
+  "parent": "omaha-beach",
+  "wikidata": "Q1588557",
+  "zoom": {
+    "min": 12
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Drafted for #5. time.start is D-Day, when the strongpoint was fought over. Wikipedia's Omaha Beach passages used here cite Badsey & Bean, Omaha Beach (Sutton, 2004), pp. 42, 71, 76-77, and Omaha Beachhead (Historical Division, 1945), pp. 63-65 (ch. 4). Neither could be read from this session (history.army.mil returns 403, web.archive.org is not reachable), so the cites point at Wikipedia; a checker should replace them with Omaha Beachhead page cites (source cmh-omaha-beachhead) once it is readable. That surviving concrete remains are present is taken from Wikidata only (instance of bunker, made of reinforced concrete, has part Regelbau 699 and tobruk), so it stays unreviewed. Coordinate is Wikidata P625, given to 4 decimals only (about 10 m), so accuracy is approximate; OSM node id from Wikidata P11693, not checked against OSM directly. Heinrich Severloh's ammunition claims are left out on purpose: Wikipedia itself says they are disputed, and no source for either side was readable."
+  },
+  "time": {
+    "start": "1944-06-06",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Omaha Beach § Breakthrough § Assaulting the bluffs (oldid 1388011462)",
+        "quote": "At 09:05, German observers reported that WN-61 was lost, and that one machine gun was still firing from WN-62"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.8472,
+      49.36
+    ],
+    "accuracy": "approximate",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q1588557 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "German strongpoint (Widerstandsnest, 'resistance nest') on the bluffs at Colleville-sur-Mer, covering the E-3 draw. It was one of 15 strongpoints along Omaha Beach, numbered WN-60 in the east to WN-74 in the west. On D-Day American troops got inside its wire early in the assault, and by mid-morning only one machine gun was reported still firing from it. Wikidata records surviving reinforced-concrete bunkers at the site.",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Omaha Beach § Terrain and defenses (oldid 1388011462)",
+        "quote": "15 strongpoints called Widerstandsnester (\"resistance nests\"), numbered WN-60 in the east to WN-74 near Vierville in the west"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Omaha Beach § Breakthrough § Assaulting the bluffs (oldid 1388011462)",
+        "quote": "between WN-64 (defending the E-1 draw) and WN-62 (the E-3 draw)"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Omaha Beach § Second assault wave § German situation (oldid 1388011462)"
+      },
+      {
+        "source": "wikidata",
+        "locator": "Q1588557 P131"
+      },
+      {
+        "source": "wikidata",
+        "locator": "Q1588557 P31"
+      },
+      {
+        "source": "wikidata",
+        "locator": "Q1588557 P186"
+      },
+      {
+        "source": "wikidata",
+        "locator": "Q1588557 P527"
+      }
+    ]
+  },
+  "facts": [
+    {
+      "label": "Defended",
+      "value": "Draw E-3",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Omaha Beach § Breakthrough § Assaulting the bluffs (oldid 1388011462)",
+          "quote": "WN-62 (the E-3 draw)"
+        }
+      ]
+    },
+    {
+      "label": "US troops inside the wire (German report)",
+      "value": "By 07:35, 6 June 1944",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Omaha Beach § Second assault wave § German situation (oldid 1388011462)",
+          "quote": "By 07:35, the third battalion of the 726th Grenadier Regiment ... was reporting that 100–200 American troops had penetrated the front, with troops inside the wire at WN-62 and WN-61"
+        }
+      ]
+    },
+    {
+      "label": "Still firing (German report)",
+      "value": "One machine gun at 09:05",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Omaha Beach § Breakthrough § Assaulting the bluffs (oldid 1388011462)",
+          "quote": "At 09:05, German observers reported that WN-61 was lost, and that one machine gun was still firing from WN-62"
+        }
+      ]
+    },
+    {
+      "label": "Surviving structures (present day)",
+      "value": "Regelbau 699 bunker and a tobruk",
+      "cite": [
+        {
+          "source": "wikidata",
+          "locator": "Q1588557 P527"
+        }
+      ]
+    }
+  ],
+  "modern": [
+    {
+      "name": "WN-62 remains",
+      "kind": "fortification",
+      "coordinates": [
+        -0.8472,
+        49.36
+      ],
+      "osm": "node/4953296233",
+      "cite": [
+        {
+          "source": "wikidata",
+          "locator": "Q1588557 P625"
+        },
+        {
+          "source": "wikidata",
+          "locator": "Q1588557 P11693",
+          "quote": "4953296233"
+        }
+      ]
+    }
+  ]
+}

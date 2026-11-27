@@ -1,0 +1,80 @@
+{
+  "id": "overlord-museum",
+  "name": "Overlord Museum",
+  "kind": "other",
+  "parent": "omaha-beach",
+  "wikidata": "Q106833385",
+  "wikipedia": "https://en.wikipedia.org/wiki/Overlord_Museum",
+  "zoom": {
+    "min": 12
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Drafted for #5. A present-day museum. Wikidata P571 gives an inception year of 2013, but the schema only accepts dates from 1939 to 1945, so time.start holds the date of the Omaha Beach landing the museum is near and is about (Wikidata Q464257 P585), not the opening date. The opening year is stated in the summary instead. Needs a schema decision for present-day places (see PR). The museum's own site (overlordmuseum.com) is not reachable from this session, so nothing is cited from it. Coordinate is Wikidata P625; OSM way id from Wikidata P10689, not checked against OSM directly."
+  },
+  "time": {
+    "start": "1944-06-06",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q464257 P585",
+        "quote": "1944-06-06"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.856488887,
+      49.34783655
+    ],
+    "accuracy": "approximate",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q106833385 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "Museum at Colleville-sur-Mer, close to Omaha Beach and the Normandy American Cemetery, about the Allied landings in Normandy and the war that followed. Vehicles and objects are shown mostly in large diorama scenes. Wikidata records it as founded in 2013.",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Overlord Museum § lead (oldid 1363416346)"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Overlord Museum § Museum concept and contents of the exhibition (oldid 1363416346)"
+      },
+      {
+        "source": "wikidata",
+        "locator": "Q106833385 P571",
+        "quote": "2013"
+      }
+    ]
+  },
+  "modern": [
+    {
+      "name": "Overlord Museum",
+      "kind": "museum",
+      "coordinates": [
+        -0.856488887,
+        49.34783655
+      ],
+      "osm": "way/195196203",
+      "cite": [
+        {
+          "source": "wikidata",
+          "locator": "Q106833385 P625"
+        },
+        {
+          "source": "wikidata",
+          "locator": "Q106833385 P10689",
+          "quote": "195196203"
+        }
+      ]
+    }
+  ]
+}
