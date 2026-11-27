@@ -8,6 +8,12 @@ extension microsoftGraphV1
 @description('GitHub repository in owner/name form.')
 param githubRepo string
 
+@description('Numeric GitHub id of the repository owner (gh api repos/OWNER/REPO --jq .owner.id).')
+param githubOwnerId string
+
+@description('Numeric GitHub id of the repository (gh api repos/OWNER/REPO --jq .id).')
+param githubRepoId string
+
 @description('Short project name used for resource naming.')
 param project string = 'ww2-map'
 
@@ -17,6 +23,16 @@ param location string = 'westeurope'
 var rgName = 'rg-${project}'
 var oidcIssuer = 'https://token.actions.githubusercontent.com'
 var oidcAudience = 'api://AzureADTokenExchange'
+
+// GitHub's OIDC `sub` claim comes in two formats depending on repository/account settings:
+//   legacy:        repo:OWNER/REPO:...
+//   immutable ids: repo:OWNER@OWNER_ID/REPO@REPO_ID:...
+// Trust both so a settings change on GitHub's side can't silently break deploys.
+var repoParts = split(githubRepo, '/')
+var legacyPrefix = 'repo:${githubRepo}'
+var idsPrefix = 'repo:${repoParts[0]}@${githubOwnerId}/${repoParts[1]}@${githubRepoId}'
+// Entra requires issuer+subject to be unique per app, so credential names stay stable:
+// the legacy ones keep their original names from the first bootstrap.
 
 resource rg 'Microsoft.Resources/resourceGroups@2024-03-01' = {
   name: rgName
@@ -33,7 +49,14 @@ resource deployerApp 'Microsoft.Graph/applications@v1.0' = {
     name: '${deployerApp.uniqueName}/github-main'
     issuer: oidcIssuer
     audiences: [oidcAudience]
-    subject: 'repo:${githubRepo}:ref:refs/heads/main'
+    subject: '${legacyPrefix}:ref:refs/heads/main'
+  }
+
+  resource mainBranchIds 'federatedIdentityCredentials' = {
+    name: '${deployerApp.uniqueName}/github-main-ids'
+    issuer: oidcIssuer
+    audiences: [oidcAudience]
+    subject: '${idsPrefix}:ref:refs/heads/main'
   }
 }
 
@@ -51,7 +74,14 @@ resource previewerApp 'Microsoft.Graph/applications@v1.0' = {
     name: '${previewerApp.uniqueName}/github-pull-request'
     issuer: oidcIssuer
     audiences: [oidcAudience]
-    subject: 'repo:${githubRepo}:pull_request'
+    subject: '${legacyPrefix}:pull_request'
+  }
+
+  resource pullRequestsIds 'federatedIdentityCredentials' = {
+    name: '${previewerApp.uniqueName}/github-pull-request-ids'
+    issuer: oidcIssuer
+    audiences: [oidcAudience]
+    subject: '${idsPrefix}:pull_request'
   }
 }
 
