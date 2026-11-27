@@ -1,0 +1,235 @@
+{
+  "id": "gold-beach-king",
+  "name": "King sector, Gold Beach",
+  "kind": "landing",
+  "parent": "gold-beach",
+  "zoom": {
+    "min": 12
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Drafted for issue #12. Network: this drafting session could reach only en.wikipedia.org, www.wikidata.org and tiles.openfreemap.org. Refused by the proxy (CONNECT 403 or no connection): www.ibiblio.org (Ellis, Victory in the West vol. I, HyperWar transcription), archive.org and web.archive.org, www.openstreetmap.org, overpass-api.de, nominatim.openstreetmap.org, cgsc.contentdm.oclc.org (Williams 2007 thesis), apps.dtic.mil, www.ddaymuseum.co.uk (Portsmouth Museum Services FAQ), www.cwgc.org, www.iwm.org.uk, www.dday-overlord.com, www.goldbeach.org.uk, fr.wikipedia.org; history.army.mil returned HTTP 403. No official history or named historian was read directly, so every historical cite is to English Wikipedia at a pinned revision; each locator names the work the article cites (mostly Trew 2004, Ford & Zaloga 2009) so the claims can be upgraded once those or Ellis can be read. OSM: openstreetmap.org was unreachable, so OSM-derived data was read from OpenFreeMap vector tiles (planet build 20261122_124456_pt, z14). Tile feature ids are cited as seen; they appear to encode the OSM element (id×10 + 1 node / 2 way / 3 relation, e.g. 9961187072 → way/996118707), but this could not be confirmed on openstreetmap.org, so no `osm` field is set. Geometry: a single representative point on the present-day shoreline at the longitude of the Mont Fleury place node, because a 6 June 1944 aerial photograph caption (British Normandy Memorial article) places the junction of King Red and King Green in front of the Mont Fleury battery and Ver-sur-Mer. No polygon: the western limit (WN-35, Le Pont Chaussé) could not be located from a readable source, and the eastern limit at La Rivière is only implied. Open questions: Stanley Hollis's battalion is not stated in the cited sections, so it is not given. The lead says the La Rivière 88 mm gun was neutralised at 07:30; § King Sector gives no time; Normandy landings agrees on 07:30 (citing Ford & Zaloga p. 292)."
+  },
+  "time": {
+    "start": "1944-06-06T07:25",
+    "precision": "minute",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Gold Beach § Landings › King Sector; article cites Holt & Holt (2009) p. 129 (rev. 1385489912)",
+        "quote": "H-Hour for the landing at Gold was set at 07:25 on King sector"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.51603,
+      49.34525
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "British Normandy Memorial § Background (gallery caption) (rev. 1370772754)",
+        "quote": "Aerial photo of the junction of King Red and King Green beaches, Gold assault area, on 6 June 1944. The Mont Fleury battery (WN 35a)"
+      },
+      {
+        "source": "osm",
+        "locator": "OpenFreeMap planet build 20261122_124456_pt, z14 vector tiles: shoreline (ocean polygon edge) at the longitude of the Mont Fleury place node (tile feature 96998795181)"
+      }
+    ]
+  },
+  "summary": {
+    "text": "The eastern of Gold's two assault sectors, in front of Mont Fleury, Ver-sur-Mer and La Rivière. The 5th East Yorkshires and 6th Green Howards of the 69th Infantry Brigade landed first, almost together with engineers and DD tanks of the 4th/7th Dragoon Guards, which rough seas forced to be run straight onto the beach. A casemated 88 mm gun at La Rivière pinned the infantry behind the sea wall until a Westminster Dragoons flail tank fired into its embrasure. The East Yorkshires spent the morning clearing the fortified houses of La Rivière. Once a flail had cleared an exit, the Green Howards and tanks took the Mont Fleury battery and pushed on to the Meuvaines ridge and towards Crépon; the 7th Green Howards took the battery at Ver-sur-Mer. Stanley Hollis won the only Victoria Cross for D-Day in the fighting around Mont Fleury. In the second wave the 151st Brigade and the 56th Brigade, diverted from Jig, landed on King and moved inland towards the Bayeux–Caen road and Bayeux.",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Gold Beach § Landings › King Sector (rev. 1385489912)"
+      }
+    ]
+  },
+  "facts": [
+    {
+      "label": "First infantry ashore (H-Hour)",
+      "value": "07:25",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › King Sector; article cites Holt & Holt (2009) p. 129 (rev. 1385489912)",
+          "quote": "H-Hour for the landing at Gold was set at 07:25 on King sector"
+        }
+      ]
+    },
+    {
+      "label": "La Rivière 88 mm gun neutralised",
+      "value": "07:30",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § lead (rev. 1385489912)",
+          "quote": "A second casemated emplacement at La Rivière containing an 88 mm gun was neutralised by a tank at 07:30."
+        },
+        {
+          "source": "wikipedia",
+          "locator": "Normandy landings § Gold Beach; article cites Ford & Zaloga (2009) p. 292 (rev. 1386946425)",
+          "quote": "had been neutralised by a tank at 07:30"
+        }
+      ]
+    },
+    {
+      "label": "7th Green Howards landed",
+      "value": "08:20",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › King Sector; article cites Ford & Zaloga (2009) p. 292 (rev. 1385489912)",
+          "quote": "The 7th Green Howards landed at 08:20."
+        }
+      ]
+    },
+    {
+      "label": "DD tanks planned for King",
+      "value": "38",
+      "low": 38,
+      "high": 38,
+      "side": "Allied",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › King Sector; article cites Ford & Zaloga (2009) p. 290 (rev. 1385489912)",
+          "quote": "The original plan called for the 38 DD tanks to be launched"
+        }
+      ]
+    },
+    {
+      "label": "5th East Yorkshires' losses clearing La Rivière",
+      "value": "90 men, incl. 6 officers",
+      "low": 90,
+      "high": 90,
+      "side": "Allied",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › King Sector; article cites Ford & Zaloga (2009) p. 291 and Trew (2004) p. 64 (rev. 1385489912)",
+          "quote": "at the loss of 90 men, including six officers"
+        }
+      ]
+    },
+    {
+      "label": "Prisoners taken at the Ver-sur-Mer battery",
+      "value": "50",
+      "low": 50,
+      "high": 50,
+      "side": "German",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › King Sector; article cites Ford & Zaloga (2009) pp. 294–295 (rev. 1385489912)",
+          "quote": "The 7th Green Howards attacked the gun battery at Ver-Sur-Mer, where they took 50 prisoners."
+        }
+      ]
+    },
+    {
+      "label": "Victoria Cross",
+      "value": "Stanley Hollis (the only VC awarded for D-Day)",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › King Sector; article cites Ford & Zaloga (2009) p. 302 (rev. 1385489912)",
+          "quote": "Colour Sergeant-Major Stanley Hollis earned the only Victoria Cross to be bestowed for actions on D-Day."
+        }
+      ]
+    }
+  ],
+  "participants": [
+    {
+      "name": "5th Battalion, East Yorkshire Regiment (69th Brigade)",
+      "side": "allied",
+      "role": "First wave; La Rivière",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › King Sector (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "6th Battalion, Green Howards (69th Brigade)",
+      "side": "allied",
+      "role": "First wave; Mont Fleury battery, Meuvaines ridge, Crépon",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › King Sector (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "7th Battalion, Green Howards (69th Brigade)",
+      "side": "allied",
+      "role": "Landed 08:20; Ver-sur-Mer battery",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › King Sector (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "4th/7th Royal Dragoon Guards (8th Armoured Brigade)",
+      "side": "allied",
+      "role": "DD tanks",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › King Sector (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "Westminster Dragoons (79th Armoured Division)",
+      "side": "allied",
+      "role": "Flail tanks; knocked out the La Rivière 88 mm gun",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › King Sector; § Order of battle › British forces (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "151st Infantry Brigade",
+      "side": "allied",
+      "role": "Second wave; Bayeux–Caen road and railway",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › King Sector (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "56th Infantry Brigade",
+      "side": "allied",
+      "role": "Re-routed from Jig; advanced on Bayeux",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › King Sector (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "German 716th Static Infantry Division (elements)",
+      "side": "axis",
+      "role": "Coastal defence",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Order of battle › German forces (rev. 1385489912)"
+        }
+      ]
+    }
+  ]
+}

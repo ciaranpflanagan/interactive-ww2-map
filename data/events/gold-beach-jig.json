@@ -1,0 +1,240 @@
+{
+  "id": "gold-beach-jig",
+  "name": "Jig sector, Gold Beach",
+  "kind": "landing",
+  "parent": "gold-beach",
+  "zoom": {
+    "min": 12
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Drafted for issue #12. Network: this drafting session could reach only en.wikipedia.org, www.wikidata.org and tiles.openfreemap.org. Refused by the proxy (CONNECT 403 or no connection): www.ibiblio.org (Ellis, Victory in the West vol. I, HyperWar transcription), archive.org and web.archive.org, www.openstreetmap.org, overpass-api.de, nominatim.openstreetmap.org, cgsc.contentdm.oclc.org (Williams 2007 thesis), apps.dtic.mil, www.ddaymuseum.co.uk (Portsmouth Museum Services FAQ), www.cwgc.org, www.iwm.org.uk, www.dday-overlord.com, www.goldbeach.org.uk, fr.wikipedia.org; history.army.mil returned HTTP 403. No official history or named historian was read directly, so every historical cite is to English Wikipedia at a pinned revision; each locator names the work the article cites (mostly Trew 2004, Ford & Zaloga 2009) so the claims can be upgraded once those or Ellis can be read. OSM: openstreetmap.org was unreachable, so OSM-derived data was read from OpenFreeMap vector tiles (planet build 20261122_124456_pt, z14). Tile feature ids are cited as seen; they appear to encode the OSM element (id×10 + 1 node / 2 way / 3 relation, e.g. 9961187072 → way/996118707), but this could not be confirmed on openstreetmap.org, so no `osm` field is set. Geometry: a single representative point on the present-day shoreline at the longitude of the Le Hamel place node, because the 231st Brigade's first wave landed at Le Hamel/Asnelles. No polygon or line: the article says the Jig/King boundary was at strongpoint WN-35, Le Pont Chaussé, but no readable source located Le Pont Chaussé, and Jig's western limit is not described. Sub-beaches Jig Green and Jig Red appear only in image captions, so no separate records. Open questions: Ford & Zaloga (via Wikipedia) say the Hampshires' companies landed 'very close' to Le Hamel, while Trew (via Wikipedia) says both battalions came ashore 'well to the east' of their intended points; both are paraphrased in the summary without reconciling them. The 76 casualties for 47 Commando are agreed by both articles; the 47 Commando article's own source (47commando.org.uk) is a dead link."
+  },
+  "time": {
+    "start": "1944-06-06T07:25",
+    "precision": "minute",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Gold Beach § Landings › Jig Sector; article cites Trew (2004) pp. 51–52, 55 (rev. 1385489912)",
+        "quote": "the 1st Dorsetshires and 1st Hampshires of the 231st Infantry Brigade) arrived at 07:25"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.5883,
+      49.3417
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Gold Beach § lead and § Background › Allied planning (rev. 1385489912)",
+        "quote": "the landings took place on the flat section between Le Hamel and La Rivière, in the sectors code-named Jig and King"
+      },
+      {
+        "source": "osm",
+        "locator": "OpenFreeMap planet build 20261122_124456_pt, z14 vector tiles: shoreline (ocean polygon edge) at the longitude of the Le Hamel place node (tile feature 109972275931)"
+      }
+    ]
+  },
+  "summary": {
+    "text": "The western of Gold's two assault sectors, in front of Le Hamel and Asnelles. The 1st Dorsets and 1st Hampshires of the 231st Infantry Brigade landed first, east of their intended points because of navigation errors and the current, and were met by fire from a casemated 75 mm gun at Le Hamel that covered the beach. Their supporting DD and Centaur tanks arrived late and many bogged down or were knocked out. The Hampshires took strongpoint WN-36 at the east of Asnelles but had to work round Le Hamel from the rear; an AVRE silenced the gun in the afternoon, after which the Hampshires cleared strongpoints westward to the Arromanches radar station. The 2nd Devons landed later in the morning and went inland to take Ryes, and the Dorsets swung west onto the high ground south of Arromanches, which fell late in the afternoon. No. 47 (Royal Marine) Commando also came ashore here, losing several landing craft, before setting off for Port-en-Bessin.",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Gold Beach § Landings › Jig Sector (rev. 1385489912)"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Gold Beach § Landings › 47 Commando (rev. 1385489912)"
+      }
+    ]
+  },
+  "facts": [
+    {
+      "label": "First infantry ashore",
+      "value": "07:25",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › Jig Sector; article cites Trew (2004) pp. 51–52, 55 (rev. 1385489912)",
+          "quote": "the 1st Dorsetshires and 1st Hampshires of the 231st Infantry Brigade) arrived at 07:25"
+        }
+      ]
+    },
+    {
+      "label": "Supporting DD and Centaur tanks arrived",
+      "value": "08:00",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › Jig Sector; article cites Trew (2004) pp. 51–52, 55 (rev. 1385489912)",
+          "quote": "were delayed by rough seas and did not arrive until 08:00"
+        }
+      ]
+    },
+    {
+      "label": "2nd Devons landed",
+      "value": "08:15",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › Jig Sector; article cites Ford & Zaloga (2009) p. 289 (rev. 1385489912)",
+          "quote": "The 2nd Devons arrived at 08:15"
+        }
+      ]
+    },
+    {
+      "label": "No. 47 (RM) Commando landed",
+      "value": "09:50",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › 47 Commando; article cites Trew (2004) p. 154 (rev. 1385489912)",
+          "quote": "the commandos began disembarking at Jig, some distance east of their intended position, at 09:50"
+        },
+        {
+          "source": "wikipedia",
+          "locator": "No. 47 (Royal Marine) Commando § History › June 1944 (rev. 1376240094)",
+          "quote": "No. 47 landed at Gold Beach at 09:50 hours 6 June near the town of Asnelles"
+        }
+      ]
+    },
+    {
+      "label": "No. 47 (RM) Commando losses on landing",
+      "value": "76 of 420 men; 5 landing craft sunk",
+      "low": 76,
+      "high": 76,
+      "side": "Allied",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › 47 Commando; article cites Trew (2004) p. 154 (rev. 1385489912)",
+          "quote": "Five of their LCAs were sunk by beach obstacles or enemy fire, at the cost of 76 casualties."
+        },
+        {
+          "source": "wikipedia",
+          "locator": "No. 47 (Royal Marine) Commando § History › June 1944 (rev. 1376240094)",
+          "quote": "with the loss of 76 of the 420 men in the Commando"
+        }
+      ]
+    },
+    {
+      "label": "Le Hamel 75 mm gun silenced",
+      "value": "16:00",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › Jig Sector; article cites Ford & Zaloga (2009) pp. 298–299 (rev. 1385489912)",
+          "quote": "gun was finally silenced at 16:00"
+        }
+      ]
+    },
+    {
+      "label": "Ryes captured",
+      "value": "~16:30",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › Jig Sector; article cites Trew (2004) p. 78 (rev. 1385489912)",
+          "quote": "Ryes was captured at around 16:30."
+        }
+      ]
+    },
+    {
+      "label": "Prisoners taken at WN-38 and WN-39",
+      "value": "50 (20 at WN-38, 30 at WN-39)",
+      "low": 50,
+      "high": 50,
+      "side": "German",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › Jig Sector; article cites Trew (2004) pp. 146–147 (rev. 1385489912)",
+          "quote": "taking 20 prisoners"
+        },
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › Jig Sector; article cites Trew (2004) pp. 146–147 (rev. 1385489912)",
+          "quote": "capturing 30 more defenders"
+        }
+      ]
+    }
+  ],
+  "participants": [
+    {
+      "name": "1st Battalion, Hampshire Regiment (231st Brigade)",
+      "side": "allied",
+      "role": "First wave; Le Hamel, WN-36, WN-38, WN-39, Arromanches",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › Jig Sector (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "1st Battalion, Dorsetshire Regiment (231st Brigade)",
+      "side": "allied",
+      "role": "First wave; inland and west to the high ground south of Arromanches",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › Jig Sector (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "2nd Battalion, Devonshire Regiment (231st Brigade)",
+      "side": "allied",
+      "role": "Second wave; Le Hamel and Ryes",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › Jig Sector (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "82nd Assault Squadron, Royal Engineers (AVREs)",
+      "side": "allied",
+      "role": "Petard attack on the Le Hamel sanatorium and casemate",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › Jig Sector; article cites Trew (2004) p. 145 and Ford & Zaloga (2009) pp. 298–299 (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "No. 47 (Royal Marine) Commando",
+      "side": "allied",
+      "role": "Landed 09:50; marched on Port-en-Bessin",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › 47 Commando (rev. 1385489912)"
+        },
+        {
+          "source": "wikipedia",
+          "locator": "No. 47 (Royal Marine) Commando § History › June 1944 (rev. 1376240094)"
+        }
+      ]
+    },
+    {
+      "name": "German 726th Infantry Regiment (716th Infantry Division)",
+      "side": "axis",
+      "role": "Two battalions in and around Le Hamel",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Order of battle › German forces; article cites Ford & Zaloga (2009) p. 272 (rev. 1385489912)",
+          "quote": "two battalions in and around Le Hamel"
+        }
+      ]
+    }
+  ]
+}
