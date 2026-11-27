@@ -1,4 +1,5 @@
 import type { Cite, Source } from '../types';
+import { wikipediaUrl } from '../wikipedia';
 
 /** Inline superscript markers. The full list renders at the bottom of the panel. */
 export function CiteMarks({ cites, index, onJump }: { cites: Cite[]; index: (c: Cite) => number; onJump?: (n: number) => void }) {
@@ -25,6 +26,7 @@ export function sourceUrl(c: Cite, s?: Source): string | undefined {
     return `https://www.wikidata.org/wiki/${q}${p?.startsWith('P') ? `#${p}` : ''}`;
   }
   if (c.source === 'osm' && c.locator) return `https://www.openstreetmap.org/${c.locator}`;
+  if (c.source === 'wikipedia' && c.locator) return wikipediaUrl(c.locator) ?? s?.url;
   return s?.url;
 }
 

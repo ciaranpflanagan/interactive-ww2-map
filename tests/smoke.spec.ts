@@ -19,6 +19,11 @@ test('loads, scrubs the timeline and opens a sourced event', async ({ page }) =>
   if (await toggle.count()) await toggle.click();
   await expect(panel.locator('.citation-list li').first()).toBeVisible();
 
+  // Wikipedia cites link to the exact revision that was cited, not the homepage.
+  const wikiLinks = panel.locator('.citation-list a[href^="https://en.wikipedia.org/"]');
+  await expect(wikiLinks.first()).toHaveAttribute('href', /^https:\/\/en\.wikipedia\.org\/w\/index\.php\?title=Omaha_Beach&oldid=\d+/);
+  await expect(panel.locator('.citation-list a[href="https://en.wikipedia.org/"]')).toHaveCount(0);
+
   const slider = page.getByRole('slider', { name: 'Date' });
   await slider.focus();
   await page.keyboard.press('ArrowRight');
