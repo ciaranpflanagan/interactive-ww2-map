@@ -1,0 +1,83 @@
+{
+  "id": "les-braves-memorial",
+  "name": "Les Braves",
+  "kind": "other",
+  "parent": "omaha-beach",
+  "wikidata": "Q117193827",
+  "zoom": {
+    "min": 12
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Drafted for #5. Wikidata-only record: no English Wikipedia article exists and no other source was reachable from this session. Wikidata's P31 and P170 statements cite normandywarguide.com, which was not fetched. No creation date could be sourced, and the schema only accepts dates from 1939 to 1945 anyway, so time.start holds the date of the Omaha Beach landing (Wikidata Q464257 P585), not a creation date. Wikidata describes it only as a 'memorial on Omaha Beach'; this record does not say what it commemorates beyond that. Coordinate is Wikidata P625 (5 decimals); OSM node id from Wikidata P11693, not checked against OSM directly."
+  },
+  "time": {
+    "start": "1944-06-06",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q464257 P585",
+        "quote": "1944-06-06"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.879561,
+      49.370921
+    ],
+    "accuracy": "approximate",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q117193827 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "Memorial sculpture by Anilore Banon on Omaha Beach, in the commune of Saint-Laurent-sur-Mer.",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q117193827 description",
+        "quote": "memorial on Omaha Beach"
+      },
+      {
+        "source": "wikidata",
+        "locator": "Q117193827 P31"
+      },
+      {
+        "source": "wikidata",
+        "locator": "Q117193827 P170"
+      },
+      {
+        "source": "wikidata",
+        "locator": "Q117193827 P131"
+      }
+    ]
+  },
+  "modern": [
+    {
+      "name": "Les Braves",
+      "kind": "memorial",
+      "coordinates": [
+        -0.879561,
+        49.370921
+      ],
+      "osm": "node/2285877744",
+      "cite": [
+        {
+          "source": "wikidata",
+          "locator": "Q117193827 P625"
+        },
+        {
+          "source": "wikidata",
+          "locator": "Q117193827 P11693",
+          "quote": "2285877744"
+        }
+      ]
+    }
+  ]
+}

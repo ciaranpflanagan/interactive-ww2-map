@@ -1,0 +1,163 @@
+{
+  "id": "normandy-american-cemetery",
+  "name": "Normandy American Cemetery and Memorial",
+  "kind": "other",
+  "parent": "omaha-beach",
+  "wikidata": "Q2134416",
+  "wikipedia": "https://en.wikipedia.org/wiki/Normandy_American_Cemetery_and_Memorial",
+  "zoom": {
+    "min": 12
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Drafted for #5. A present-day place: time.start is the date the cemetery was established, not a battle date. Wikipedia's History paragraph is internally inconsistent: it says a temporary cemetery was established on 6 June 1944 and then 'After the war, on June 8, 1944, the present-day cemetery was established'; Wikidata P571 also gives 8 June 1944. 8 June is used for time.start, and the 6 June temporary cemetery is recorded as a separate fact. Confirm both against ABMC (abmc.gov is not reachable from this session). Gravesite counts disagree slightly (Wikipedia 9,389, Wikidata 9,387), so they are recorded as a disputed range. Coordinate is Wikidata P625 (4 decimals), a single point for a ~70 ha site, so accuracy is representative. OSM relation id comes from Wikidata P402 and was not checked against OSM directly (overpass-api.de connections failed)."
+  },
+  "time": {
+    "start": "1944-06-08",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Normandy American Cemetery and Memorial § History (oldid 1361186778)",
+        "quote": "on June 8, 1944, the present-day cemetery was established"
+      },
+      {
+        "source": "wikidata",
+        "locator": "Q2134416 P571",
+        "quote": "1944-06-08"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.8575,
+      49.36
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q2134416 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "American war cemetery and memorial on the bluff above Omaha Beach at Colleville-sur-Mer. Most of those buried there died in the Normandy landings and the fighting that followed. It is run by the American Battle Monuments Commission.",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Normandy American Cemetery and Memorial § lead (oldid 1361186778)"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Normandy American Cemetery and Memorial § Description (oldid 1361186778)"
+      }
+    ]
+  },
+  "facts": [
+    {
+      "label": "Gravesites",
+      "value": "9,387–9,389",
+      "low": 9387,
+      "high": 9389,
+      "disputed": true,
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Normandy American Cemetery and Memorial § lead (oldid 1361186778)",
+          "quote": "contains 9,389 gravesites"
+        },
+        {
+          "source": "wikidata",
+          "locator": "Q2134416 P1971",
+          "quote": "9387"
+        }
+      ]
+    },
+    {
+      "label": "Area",
+      "value": "172.5 acres (69.8 ha)",
+      "low": 69.8,
+      "high": 69.8,
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Normandy American Cemetery and Memorial § lead (oldid 1361186778)",
+          "quote": "covers 172.5 acres (69.8 ha)"
+        }
+      ]
+    },
+    {
+      "label": "Names on the Wall of the Missing",
+      "value": "1,557",
+      "low": 1557,
+      "high": 1557,
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Normandy American Cemetery and Memorial § Burials § Number of burials (oldid 1361186778)",
+          "quote": "the names of 1,557 servicemembers declared missing in action"
+        }
+      ]
+    },
+    {
+      "label": "Temporary cemetery established",
+      "value": "6 June 1944, by the 607th Quartermaster Graves Registration Company, US First Army",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Normandy American Cemetery and Memorial § History (oldid 1361186778)",
+          "quote": "On June 6, 1944, the 607th Quartermaster Graves Registration Company of the U.S. First Army established a temporary cemetery"
+        }
+      ]
+    },
+    {
+      "label": "Dedicated",
+      "value": "19 July 1956",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Normandy American Cemetery and Memorial § History (oldid 1361186778)",
+          "quote": "It was dedicated on July 19, 1956"
+        }
+      ]
+    },
+    {
+      "label": "Managed by",
+      "value": "American Battle Monuments Commission",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Normandy American Cemetery and Memorial § History (oldid 1361186778)"
+        },
+        {
+          "source": "wikidata",
+          "locator": "Q2134416 P127"
+        }
+      ]
+    }
+  ],
+  "modern": [
+    {
+      "name": "Normandy American Cemetery and Memorial",
+      "kind": "cemetery",
+      "coordinates": [
+        -0.8575,
+        49.36
+      ],
+      "osm": "relation/9390140",
+      "cite": [
+        {
+          "source": "wikidata",
+          "locator": "Q2134416 P625"
+        },
+        {
+          "source": "wikidata",
+          "locator": "Q2134416 P402",
+          "quote": "9390140"
+        }
+      ]
+    }
+  ]
+}

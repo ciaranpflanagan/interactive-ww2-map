@@ -1,0 +1,117 @@
+{
+  "id": "widerstandsnest-65",
+  "name": "Widerstandsnest 65 (WN-65)",
+  "kind": "other",
+  "parent": "omaha-beach",
+  "wikidata": "Q5857828",
+  "zoom": {
+    "min": 12
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Drafted for #5. time.start is D-Day, when the strongpoint was fought over. Wikipedia's Omaha Beach passages used here cite Badsey & Bean, Omaha Beach (Sutton, 2004), pp. 42, 71, 76-77, and Omaha Beachhead (Historical Division, 1945), pp. 63-65 (ch. 4). Neither could be read from this session (history.army.mil returns 403, web.archive.org is not reachable), so the cites point at Wikipedia; a checker should replace them with Omaha Beachhead page cites (source cmh-omaha-beachhead) once it is readable. Check the draw: the same Wikipedia paragraph assigns the E-1 draw to both WN-64 and WN-65, so one of them may be wrong. That surviving concrete remains are present is taken from Wikidata only (instance of bunker, made of reinforced concrete, has part Regelbau 677), so it stays unreviewed. Coordinate is Wikidata P625; OSM way id from Wikidata P10689, not checked against OSM directly."
+  },
+  "time": {
+    "start": "1944-06-06",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Omaha Beach § Breakthrough § Assaulting the bluffs (oldid 1388011462)",
+        "quote": "WN-65 (defending the E-1 draw)"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.86366,
+      49.36448
+    ],
+    "accuracy": "approximate",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q5857828 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "German strongpoint (Widerstandsnest) at Saint-Laurent-sur-Mer that defended the E-1 draw off Omaha Beach. On D-Day the 3rd Battalion, 116th RCT climbed the bluff between WN-66 and WN-65, and by 09:00 the defenders of WN-62 wrongly reported that WN-65 and WN-66 had fallen. Wikidata records a surviving reinforced-concrete bunker at the site.",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Omaha Beach § Breakthrough § Assaulting the bluffs (oldid 1388011462)",
+        "quote": "between WN-66 (which defended the D-3 draw at Les Moulins), and WN-65 (defending the E-1 draw) ... had gained the top by 09:00, causing the defenders at WN-62 to mistakenly report that both WN-65 and WN-66 had been taken"
+      },
+      {
+        "source": "wikidata",
+        "locator": "Q5857828 P131"
+      },
+      {
+        "source": "wikidata",
+        "locator": "Q5857828 P31"
+      },
+      {
+        "source": "wikidata",
+        "locator": "Q5857828 P186"
+      }
+    ]
+  },
+  "facts": [
+    {
+      "label": "Defended",
+      "value": "Draw E-1",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Omaha Beach § Breakthrough § Assaulting the bluffs (oldid 1388011462)",
+          "quote": "WN-65 (defending the E-1 draw)"
+        }
+      ]
+    },
+    {
+      "label": "Wrongly reported taken (German report)",
+      "value": "By 09:00, 6 June 1944",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Omaha Beach § Breakthrough § Assaulting the bluffs (oldid 1388011462)",
+          "quote": "had gained the top by 09:00, causing the defenders at WN-62 to mistakenly report that both WN-65 and WN-66 had been taken"
+        }
+      ]
+    },
+    {
+      "label": "Surviving structures (present day)",
+      "value": "Regelbau 677 bunker",
+      "cite": [
+        {
+          "source": "wikidata",
+          "locator": "Q5857828 P527"
+        }
+      ]
+    }
+  ],
+  "modern": [
+    {
+      "name": "WN-65 remains",
+      "kind": "fortification",
+      "coordinates": [
+        -0.86366,
+        49.36448
+      ],
+      "osm": "way/219919044",
+      "cite": [
+        {
+          "source": "wikidata",
+          "locator": "Q5857828 P625"
+        },
+        {
+          "source": "wikidata",
+          "locator": "Q5857828 P10689",
+          "quote": "219919044"
+        }
+      ]
+    }
+  ]
+}
