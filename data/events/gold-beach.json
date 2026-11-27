@@ -10,82 +10,827 @@
   },
   "review": {
     "status": "agent-checked",
-    "notes": "Summary, parent and participants revised for issue #2 (previously a Wikidata description). Official histories (Harrison, Cross-Channel Attack; Ellis, Victory in the West vol. I; Stacey, The Victory Campaign) could not be fetched from the drafting session: the network proxy refused www.ibiblio.org, www.canada.ca and history.army.mil. Cites are therefore to English Wikipedia at a pinned revision, used only for uncontroversial facts (assaulting formation, location, objectives); they should be upgraded to the official histories once those can be read. Geometry unchanged: Wikidata representative point. Sources checked 2026-11-27 by an independent check-sources agent for PR #8: every cite, quote and section locator verified against the pinned Wikipedia revisions and the Wikidata statements; no history.army.mil citations are present."
+    "notes": "Revised for issue #12 (Gold Beach in depth); status reset to unreviewed. Network: this drafting session could reach only en.wikipedia.org, www.wikidata.org and tiles.openfreemap.org. Refused by the proxy (CONNECT 403 or no connection): www.ibiblio.org (Ellis, Victory in the West vol. I, HyperWar transcription), archive.org and web.archive.org, www.openstreetmap.org, overpass-api.de, nominatim.openstreetmap.org, cgsc.contentdm.oclc.org (Williams 2007 thesis), apps.dtic.mil, www.ddaymuseum.co.uk (Portsmouth Museum Services FAQ), www.cwgc.org, www.iwm.org.uk, www.dday-overlord.com, www.goldbeach.org.uk, fr.wikipedia.org; history.army.mil returned HTTP 403. No official history or named historian was read directly, so every historical cite is to English Wikipedia at a pinned revision; each locator names the work the article cites (mostly Trew 2004, Ford & Zaloga 2009) so the claims can be upgraded once those or Ellis can be read. OSM: openstreetmap.org was unreachable, so OSM-derived data was read from OpenFreeMap vector tiles (planet build 20261122_124456_pt, z14). Tile feature ids are cited as seen; they appear to encode the OSM element (id×10 + 1 node / 2 way / 3 relation, e.g. 9961187072 → way/996118707), but this could not be confirmed on openstreetmap.org, so no `osm` field is set. Geometry: polygon derived, not drawn from a cited map. Its landward edge is the present-day OSM coastline (mean high water), sampled every 0.005° of longitude from the Port-en-Bessin place node (-0.75266) to the La Rivière place node (-0.50782), the end points the article gives for Gold; its seaward edge is the same line offset 0.006° (~670 m) north to stand for the foreshore and approaches. Hence `approximate`. The 1944 shoreline and the exact limits of the landing area are not reproduced. Casualties: the two figures found (Normandy landings, citing Portsmouth Museum Services: ~1,000; Gold Beach, citing Trew: 1,000–1,100) are recorded as a range with both ends cited and marked disputed. Ellis (UK official history) should be checked for a figure. Open questions: (1) The Gold Beach article gives two times for the Longues-sur-Mer battery being silenced (06:20 in the lead, 07:00 in § Landings) and the Longues article describes a different sequence (05:37 opening, 08:00 re-engagement); no Longues timing is recorded here. (2) Sectors How and Item are not named in any readable source, so only Jig and King have records. (3) The Musée d'Arromanches tile POI is probably the Musée du Débarquement (Wikipedia: Museum of the Landings; Wikidata Q50603042 'D-Day Museum') but this was not confirmed, so the OSM name is used. (4) Musées America et Gold Beach is cited to OSM only. (5) The Longues-sur-Mer battery point is the Wikipedia infobox coordinate; no OSM element was found in the tile POIs. (6) battle-of-port-en-bessin.json is left untouched (not in this issue's file scope); it is still a Wikidata import. Sources checked 2026-11-27 by an independent check-sources agent for PR #20: every quote, section locator and cited page verified against the pinned Wikipedia revisions; OSM place and POI features re-read from the same OpenFreeMap build and their coordinates match. Fixes: summary no longer says the La Rivière gun fired along the beach (the article says that only of Le Hamel); Kampfgruppe Meyer and its counter-attack were dropped from the 352nd Division entry because the article does not tie the Kampfgruppe to a division."
   },
   "time": {
-    "start": "1944-06-06",
-    "precision": "day",
+    "start": "1944-06-06T07:25",
+    "precision": "minute",
     "cite": [
       {
         "source": "wikipedia",
-        "locator": "Gold Beach § lead (revision 1385489912)",
-        "quote": "in the Normandy landings on 6 June 1944"
+        "locator": "Gold Beach § lead (rev. 1385489912)",
+        "quote": "amphibious landings commenced at 07:25"
       },
       {
-        "source": "wikidata",
-        "locator": "Q745883 P585"
+        "source": "wikipedia",
+        "locator": "Gold Beach § Landings › King Sector; article cites Holt & Holt (2009) p. 129 (rev. 1385489912)",
+        "quote": "H-Hour for the landing at Gold was set at 07:25 on King sector"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Gold Beach § Landings › Jig Sector; article cites Trew (2004) pp. 51–52, 55 (rev. 1385489912)",
+        "quote": "the 1st Dorsetshires and 1st Hampshires of the 231st Infantry Brigade) arrived at 07:25"
       }
     ]
   },
   "geometry": {
-    "type": "Point",
+    "type": "Polygon",
     "coordinates": [
-      -0.5673604,
-      49.3434406
+      [
+        [
+          -0.75266,
+          49.34945
+        ],
+        [
+          -0.74766,
+          49.34935
+        ],
+        [
+          -0.74266,
+          49.3487
+        ],
+        [
+          -0.73766,
+          49.3482
+        ],
+        [
+          -0.73266,
+          49.3479
+        ],
+        [
+          -0.72766,
+          49.34765
+        ],
+        [
+          -0.72266,
+          49.34695
+        ],
+        [
+          -0.71766,
+          49.34735
+        ],
+        [
+          -0.71266,
+          49.34775
+        ],
+        [
+          -0.70766,
+          49.348
+        ],
+        [
+          -0.70266,
+          49.3471
+        ],
+        [
+          -0.69766,
+          49.3471
+        ],
+        [
+          -0.69266,
+          49.34735
+        ],
+        [
+          -0.68766,
+          49.34665
+        ],
+        [
+          -0.68266,
+          49.34635
+        ],
+        [
+          -0.67766,
+          49.34635
+        ],
+        [
+          -0.67266,
+          49.3462
+        ],
+        [
+          -0.66766,
+          49.3461
+        ],
+        [
+          -0.66266,
+          49.34575
+        ],
+        [
+          -0.65766,
+          49.3459
+        ],
+        [
+          -0.65266,
+          49.3464
+        ],
+        [
+          -0.64766,
+          49.34595
+        ],
+        [
+          -0.64266,
+          49.34525
+        ],
+        [
+          -0.63766,
+          49.34425
+        ],
+        [
+          -0.63266,
+          49.34205
+        ],
+        [
+          -0.62766,
+          49.3416
+        ],
+        [
+          -0.62266,
+          49.3406
+        ],
+        [
+          -0.61766,
+          49.3403
+        ],
+        [
+          -0.61266,
+          49.34025
+        ],
+        [
+          -0.60766,
+          49.34
+        ],
+        [
+          -0.60266,
+          49.33975
+        ],
+        [
+          -0.59766,
+          49.34005
+        ],
+        [
+          -0.59266,
+          49.34085
+        ],
+        [
+          -0.58766,
+          49.3418
+        ],
+        [
+          -0.58266,
+          49.342
+        ],
+        [
+          -0.57766,
+          49.3428
+        ],
+        [
+          -0.57266,
+          49.34355
+        ],
+        [
+          -0.56766,
+          49.34435
+        ],
+        [
+          -0.56266,
+          49.3454
+        ],
+        [
+          -0.55766,
+          49.3461
+        ],
+        [
+          -0.55266,
+          49.3462
+        ],
+        [
+          -0.54766,
+          49.346
+        ],
+        [
+          -0.54266,
+          49.3459
+        ],
+        [
+          -0.53766,
+          49.3458
+        ],
+        [
+          -0.53266,
+          49.34565
+        ],
+        [
+          -0.52766,
+          49.3457
+        ],
+        [
+          -0.52266,
+          49.3455
+        ],
+        [
+          -0.51766,
+          49.34535
+        ],
+        [
+          -0.51266,
+          49.345
+        ],
+        [
+          -0.50782,
+          49.34445
+        ],
+        [
+          -0.50782,
+          49.35045
+        ],
+        [
+          -0.51266,
+          49.351
+        ],
+        [
+          -0.51766,
+          49.35135
+        ],
+        [
+          -0.52266,
+          49.3515
+        ],
+        [
+          -0.52766,
+          49.3517
+        ],
+        [
+          -0.53266,
+          49.35165
+        ],
+        [
+          -0.53766,
+          49.3518
+        ],
+        [
+          -0.54266,
+          49.3519
+        ],
+        [
+          -0.54766,
+          49.352
+        ],
+        [
+          -0.55266,
+          49.3522
+        ],
+        [
+          -0.55766,
+          49.3521
+        ],
+        [
+          -0.56266,
+          49.3514
+        ],
+        [
+          -0.56766,
+          49.35035
+        ],
+        [
+          -0.57266,
+          49.34955
+        ],
+        [
+          -0.57766,
+          49.3488
+        ],
+        [
+          -0.58266,
+          49.348
+        ],
+        [
+          -0.58766,
+          49.3478
+        ],
+        [
+          -0.59266,
+          49.34685
+        ],
+        [
+          -0.59766,
+          49.34605
+        ],
+        [
+          -0.60266,
+          49.34575
+        ],
+        [
+          -0.60766,
+          49.346
+        ],
+        [
+          -0.61266,
+          49.34625
+        ],
+        [
+          -0.61766,
+          49.3463
+        ],
+        [
+          -0.62266,
+          49.3466
+        ],
+        [
+          -0.62766,
+          49.3476
+        ],
+        [
+          -0.63266,
+          49.34805
+        ],
+        [
+          -0.63766,
+          49.35025
+        ],
+        [
+          -0.64266,
+          49.35125
+        ],
+        [
+          -0.64766,
+          49.35195
+        ],
+        [
+          -0.65266,
+          49.3524
+        ],
+        [
+          -0.65766,
+          49.3519
+        ],
+        [
+          -0.66266,
+          49.35175
+        ],
+        [
+          -0.66766,
+          49.3521
+        ],
+        [
+          -0.67266,
+          49.3522
+        ],
+        [
+          -0.67766,
+          49.35235
+        ],
+        [
+          -0.68266,
+          49.35235
+        ],
+        [
+          -0.68766,
+          49.35265
+        ],
+        [
+          -0.69266,
+          49.35335
+        ],
+        [
+          -0.69766,
+          49.3531
+        ],
+        [
+          -0.70266,
+          49.3531
+        ],
+        [
+          -0.70766,
+          49.354
+        ],
+        [
+          -0.71266,
+          49.35375
+        ],
+        [
+          -0.71766,
+          49.35335
+        ],
+        [
+          -0.72266,
+          49.35295
+        ],
+        [
+          -0.72766,
+          49.35365
+        ],
+        [
+          -0.73266,
+          49.3539
+        ],
+        [
+          -0.73766,
+          49.3542
+        ],
+        [
+          -0.74266,
+          49.3547
+        ],
+        [
+          -0.74766,
+          49.35535
+        ],
+        [
+          -0.75266,
+          49.35545
+        ],
+        [
+          -0.75266,
+          49.34945
+        ]
+      ]
     ],
-    "accuracy": "representative",
+    "accuracy": "approximate",
     "cite": [
       {
-        "source": "wikidata",
-        "locator": "Q745883 P625"
+        "source": "wikipedia",
+        "locator": "Gold Beach § lead and § Background › Allied planning (rev. 1385489912)",
+        "quote": "located between Port-en-Bessin on the west and the Lieu-dit La Rivière in Ver-sur-Mer on the east"
+      },
+      {
+        "source": "osm",
+        "locator": "OpenFreeMap planet build 20261122_124456_pt, z14 vector tiles: ocean polygons (OSM coastline) sampled every 0.005° of longitude; end points at the Port-en-Bessin place node (tile feature 3920500401) and the La Rivière place node (tile feature 96998539161)"
       }
     ]
   },
   "summary": {
-    "text": "The central of the five D-Day landing beaches, between Port-en-Bessin and La Rivière (Ver-sur-Mer). Because of cliffs at its western end, the landings were made on the flatter Jig and King sectors between Le Hamel and La Rivière. It was assaulted by the British 50th (Northumbrian) Infantry Division of XXX Corps. Its objectives were to take Arromanches, Bayeux and Port-en-Bessin, make contact with US forces at Omaha and link with the Canadians at Juno.",
+    "text": "The central of the five D-Day landing areas, stretching from Port-en-Bessin in the west to La Rivière (Ver-sur-Mer) in the east. Cliffs at the western end meant that the assault went in on the flat Jig and King sectors between Le Hamel and La Rivière. British XXX Corps made the landing with the 50th (Northumbrian) Infantry Division as assault division, reinforced by the 56th Infantry Brigade, the 8th Armoured Brigade, specialised armour of the 79th Armoured Division and No. 47 (Royal Marine) Commando. Naval bombardment began at 05:30 and the first infantry landed at 07:25, later than on the American beaches because of the difference in the tide. Rough seas meant the amphibious DD tanks were landed close inshore or straight onto the beach. The casemated guns at Le Hamel, which fired along the beach, and at La Rivière were knocked out by tanks. By nightfall the division had taken Arromanches and linked up with the Canadians from Juno, while 47 Commando was on the high ground south of Port-en-Bessin, which it took in the following days. Bayeux, a D-Day objective, fell on 7 June. Arromanches became the site of the British Mulberry harbour.",
     "cite": [
       {
         "source": "wikipedia",
-        "locator": "Gold Beach § lead (revision 1385489912)",
-        "quote": "Gold, the central of the five areas"
+        "locator": "Gold Beach § lead (rev. 1385489912)"
       },
       {
         "source": "wikipedia",
-        "locator": "Gold Beach § Background § Allied planning (revision 1385489912)"
+        "locator": "Gold Beach § Background › Allied planning (rev. 1385489912)"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Gold Beach § Landings (rev. 1385489912)"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Gold Beach § Aftermath › Analysis (rev. 1385489912)"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Normandy landings § Gold Beach (rev. 1386946425)"
       }
     ]
   },
+  "facts": [
+    {
+      "label": "Naval bombardment began",
+      "value": "05:30, 6 June 1944",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings; article cites Trew (2004) pp. 48–49 (rev. 1385489912)",
+          "quote": "naval bombardment by Bombarding Force K got underway at 05:30"
+        }
+      ]
+    },
+    {
+      "label": "H-Hour (first infantry ashore)",
+      "value": "07:25, 6 June 1944",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › King Sector; article cites Holt & Holt (2009) p. 129 (rev. 1385489912)",
+          "quote": "H-Hour for the landing at Gold was set at 07:25 on King sector"
+        },
+        {
+          "source": "wikipedia",
+          "locator": "Normandy landings § Gold Beach; article cites Ford & Zaloga (2009) pp. 276–277 (rev. 1386946425)",
+          "quote": "The first landings on Gold Beach were set for 07:25"
+        }
+      ]
+    },
+    {
+      "label": "Bombarding Force K",
+      "value": "18 ships, mainly cruisers and destroyers",
+      "low": 18,
+      "high": 18,
+      "side": "Allied",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Background › Allied planning; article cites Ford & Zaloga (2009) pp. 271–272 and Trew (2004) p. 49 (rev. 1385489912)",
+          "quote": "a task force of eighteen ships, primarily cruisers and destroyers"
+        }
+      ]
+    },
+    {
+      "label": "German troops on the coast between Arromanches and Asnelles",
+      "value": "~2,000",
+      "low": 2000,
+      "high": 2000,
+      "side": "German",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Background › German defenses; article cites Trew (2004) p. 29 (rev. 1385489912)",
+          "quote": "About 2,000 men, a mixture from the two infantry divisions, were stationed in the coastal area between Arromanches and Asnelles"
+        }
+      ]
+    },
+    {
+      "label": "Men landed by the end of D-Day",
+      "value": "24,970 (with 2,100 vehicles)",
+      "low": 24970,
+      "high": 24970,
+      "side": "Allied",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Aftermath › Gold after 6 June; article cites Trew (2004) p. 84 and Ellis et al. (2004) p. 223 (rev. 1385489912)",
+          "quote": "By the end of D-Day, 24,970 men had been landed at Gold, along with 2,100 vehicles"
+        }
+      ]
+    },
+    {
+      "label": "Allied casualties at Gold (D-Day)",
+      "value": "~1,000–1,100",
+      "low": 1000,
+      "high": 1100,
+      "side": "Allied",
+      "disputed": true,
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Normandy landings § Gold Beach; article cites Portsmouth Museum Services (rev. 1386946425)",
+          "quote": "Allied casualties at Gold Beach are estimated at 1,000."
+        },
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Aftermath › Analysis; article cites Trew (2004) pp. 83, 84 (rev. 1385489912)",
+          "quote": "Total casualties, from all units involved in operations at Gold, were in the region of 1,000–1,100 casualties, of which 350 were killed"
+        }
+      ]
+    },
+    {
+      "label": "Of which killed",
+      "value": "~350",
+      "low": 350,
+      "high": 350,
+      "side": "Allied",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Aftermath › Analysis; article cites Trew (2004) pp. 83, 84 (rev. 1385489912)",
+          "quote": "in the region of 1,000–1,100 casualties, of which 350 were killed"
+        }
+      ]
+    },
+    {
+      "label": "50th Division losses (D-Day)",
+      "value": "~700",
+      "low": 700,
+      "high": 700,
+      "side": "Allied",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Aftermath › Analysis; article cites Trew (2004) pp. 83, 84 (rev. 1385489912)",
+          "quote": "By the end of D-Day, the 50th Division had lost around 700 men."
+        }
+      ]
+    },
+    {
+      "label": "German losses",
+      "value": "Unknown; at least 1,000 captured",
+      "low": 1000,
+      "side": "German",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Aftermath › Analysis; article cites Trew (2004) p. 83 (rev. 1385489912)",
+          "quote": "German losses are unknown; at least 1,000 were captured."
+        }
+      ]
+    }
+  ],
   "participants": [
     {
-      "name": "British 50th (Northumbrian) Infantry Division",
+      "name": "British XXX Corps (Lt Gen Gerard Bucknall)",
       "side": "allied",
-      "role": "Assault division, XXX Corps",
+      "role": "Corps responsible for Gold",
       "cite": [
         {
           "source": "wikipedia",
-          "locator": "Gold Beach § Background § Allied planning (revision 1385489912)"
+          "locator": "Gold Beach § Background › Allied planning; article cites Ford & Zaloga (2009) p. 271 (rev. 1385489912)"
         }
       ]
     },
     {
-      "name": "German 352nd Infantry Division (elements)",
-      "side": "axis",
-      "role": "Defence",
+      "name": "British 50th (Northumbrian) Infantry Division (Maj Gen Douglas Graham)",
+      "side": "allied",
+      "role": "Assault division",
       "cite": [
         {
           "source": "wikipedia",
-          "locator": "Gold Beach § lead (revision 1385489912)"
+          "locator": "Gold Beach § Background › Allied planning; article cites Ford & Zaloga (2009) p. 271 (rev. 1385489912)",
+          "quote": "the 50th (Northumbrian) Infantry Division–commanded by Major General Douglas Graham–allotted as the assault division"
         }
       ]
     },
     {
-      "name": "German 716th Infantry Division (elements)",
-      "side": "axis",
-      "role": "Defence",
+      "name": "231st Infantry Brigade (1st Dorsetshire, 1st Hampshire, 2nd Devonshire)",
+      "side": "allied",
+      "role": "Assault brigade, Jig sector; west towards Arromanches and Omaha",
       "cite": [
         {
           "source": "wikipedia",
-          "locator": "Gold Beach § lead (revision 1385489912)"
+          "locator": "Gold Beach § Background › Allied planning; § Order of battle › British forces (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "69th Infantry Brigade (5th East Yorkshire, 6th and 7th Green Howards)",
+      "side": "allied",
+      "role": "Assault brigade, King sector; east towards Juno",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Background › Allied planning; § Order of battle › British forces (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "151st Infantry Brigade (6th, 8th and 9th Durham Light Infantry)",
+      "side": "allied",
+      "role": "Second wave, King sector; Bayeux–Caen road and railway",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Background › Allied planning; § Order of battle › British forces; § Landings › King Sector (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "56th Infantry Brigade (2nd Essex, 2nd Gloucestershire, 2nd South Wales Borderers)",
+      "side": "allied",
+      "role": "Attached; second wave, re-routed from Jig to King; objective Bayeux",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Background › Allied planning; § Order of battle › British forces; § Landings › King Sector (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "8th Armoured Brigade (4th/7th Royal Dragoon Guards, Nottinghamshire Yeomanry)",
+      "side": "allied",
+      "role": "Attached; amphibious DD tanks",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Background › Allied planning; § Order of battle › British forces (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "79th Armoured Division (elements: Westminster Dragoons, 141st RAC, 81st and 82nd Assault Squadrons RE)",
+      "side": "allied",
+      "role": "Attached; flails, Crocodiles and AVREs",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Order of battle › British forces (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "No. 47 (Royal Marine) Commando (Lt Col C. F. Phillips)",
+      "side": "allied",
+      "role": "Attached; landed on Jig, marched on Port-en-Bessin",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Landings › 47 Commando; article cites Trew (2004) pp. 152–154 (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "Royal Navy Bombarding Force K",
+      "side": "allied",
+      "role": "Naval bombardment",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Background › Allied planning; § Landings (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "German 716th Static Infantry Division (Generalleutnant Wilhelm Richter), incl. 726th Infantry Regiment and 441st Ost Battalion",
+      "side": "axis",
+      "role": "Coastal defence, Le Hamel and eastern Gold",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Order of battle › German forces; article cites Ford & Zaloga (2009) pp. 60, 272 (rev. 1385489912)"
+        }
+      ]
+    },
+    {
+      "name": "German 352nd Infantry Division (Generalleutnant Dietrich Kraiss), incl. 916th Grenadier Regiment",
+      "side": "axis",
+      "role": "Western Gold",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Order of battle › German forces; article cites Ford & Zaloga (2009) pp. 62–63 (rev. 1385489912)"
+        }
+      ]
+    }
+  ],
+  "modern": [
+    {
+      "name": "British Normandy Memorial",
+      "kind": "memorial",
+      "coordinates": [
+        -0.536951,
+        49.33842
+      ],
+      "cite": [
+        {
+          "source": "osm",
+          "locator": "OpenFreeMap planet build 20261122_124456_pt, z14 vector tiles, poi feature 9961187072 'British Normandy Memorial'"
+        },
+        {
+          "source": "wikipedia",
+          "locator": "British Normandy Memorial § lead (rev. 1370772754)",
+          "quote": "dedicated to soldiers who died under British command during the Normandy landings"
+        }
+      ]
+    },
+    {
+      "name": "Musée d'Arromanches",
+      "kind": "museum",
+      "coordinates": [
+        -0.621028,
+        49.340206
+      ],
+      "cite": [
+        {
+          "source": "osm",
+          "locator": "OpenFreeMap planet build 20261122_124456_pt, z14 vector tiles, poi feature 1281182032 'Musée d'Arromanches' (museum)"
+        }
+      ]
+    },
+    {
+      "name": "Arromanches 360",
+      "kind": "museum",
+      "coordinates": [
+        -0.617804,
+        49.338641
+      ],
+      "cite": [
+        {
+          "source": "osm",
+          "locator": "OpenFreeMap planet build 20261122_124456_pt, z14 vector tiles, poi feature 2628623342 'Arromanches 360' (museum)"
+        },
+        {
+          "source": "wikipedia",
+          "locator": "Arromanches-les-Bains § Civil heritage › Other sites of interest (rev. 1381690094)"
+        }
+      ]
+    },
+    {
+      "name": "Musées America et Gold Beach, Ver-sur-Mer",
+      "kind": "museum",
+      "coordinates": [
+        -0.525241,
+        49.336694
+      ],
+      "cite": [
+        {
+          "source": "osm",
+          "locator": "OpenFreeMap planet build 20261122_124456_pt, z14 vector tiles, poi feature 96998795861 'Musées America et Gold Beach' (museum)"
+        }
+      ]
+    },
+    {
+      "name": "Longues-sur-Mer battery",
+      "kind": "fortification",
+      "coordinates": [
+        -0.695,
+        49.3435
+      ],
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Longues-sur-Mer battery § infobox coordinate {{coord|49.3435|-0.6950}}; § lead (rev. 1364999428)",
+          "quote": "The battery is the only one in Normandy to retain several of its original guns."
+        },
+        {
+          "source": "wikipedia",
+          "locator": "Gold Beach § Tourism; article cites Trew (2004) pp. 109–110 and Ford & Zaloga (2009) p. 352 (rev. 1385489912)",
+          "quote": "The battery at Longues-sur-Mer is well preserved"
         }
       ]
     }
