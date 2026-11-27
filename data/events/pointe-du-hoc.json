@@ -8,8 +8,8 @@
     "min": 11
   },
   "review": {
-    "status": "unreviewed",
-    "notes": "Drafted from English Wikipedia only (revision 1381099170, https://en.wikipedia.org/w/index.php?title=Pointe_du_Hoc&oldid=1381099170). This session's network allowed only Wikimedia hosts: history.army.mil (Small Unit Actions, Omaha Beachhead), abmc.gov, archive.org and openstreetmap.org were all refused, so no official history was read and none is cited. Every claim should be re-checked against Small Unit Actions (CMH Pub 100-14, Pointe du Hoc chapter) once #3 settles which CMH URLs or mirrors may be cited. Open questions: (1) The casualty figures do not reconcile: the article gives 77 killed and 152 wounded (229) out of about 225 landed, and separately says about 90 were still fit to fight at the end; the totals probably count different groups (e.g. reinforcements who arrived later), so both are recorded and marked disputed rather than combined. (2) The article says patrols found five of six guns and the sixth was under repair; Small Unit Actions should confirm the number and where they were found. (3) No `wikidata` id is set: Q284649 is the cliff itself, not the action. (4) Geometry is the article's title coordinate (49°23′45″N 0°59′20″W) on the headland, so `approximate`; Wikidata Q284649 P625 gives 49.397857, -0.989394, about 230 m away. (5) No `modern` entry: the Ranger Monument / ABMC site needs an OSM node and the ABMC page, and neither host could be reached. (6) Parent: `omaha-beach`, as the issue asks; issue #2 may add a Neptune assault-phase parent, so re-parent then if wanted."
+    "status": "agent-checked",
+    "notes": "Drafted from English Wikipedia only (revision 1381099170, https://en.wikipedia.org/w/index.php?title=Pointe_du_Hoc&oldid=1381099170). This session's network allowed only Wikimedia hosts: history.army.mil (Small Unit Actions, Omaha Beachhead), abmc.gov, archive.org and openstreetmap.org were all refused, so no official history was read and none is cited. Every claim should be re-checked against Small Unit Actions (CMH Pub 100-14, Pointe du Hoc chapter) once #3 settles which CMH URLs or mirrors may be cited. Open questions: (1) The casualty figures do not reconcile: the article gives 77 killed and 152 wounded (229) out of about 225 landed, and separately says about 90 were still fit to fight at the end; the totals probably count different groups (e.g. reinforcements who arrived later), so both are recorded and marked disputed rather than combined. (2) The article says patrols found five of six guns and the sixth was under repair; Small Unit Actions should confirm the number and where they were found. (3) No `wikidata` id is set: Q284649 is the cliff itself, not the action. (4) Geometry is the article's title coordinate (49°23′45″N 0°59′20″W) on the headland, so `approximate`; Wikidata Q284649 P625 gives 49.397857, -0.989394, about 230 m away. (5) No `modern` entry: the Ranger Monument / ABMC site needs an OSM node and the ABMC page, and neither host could be reached. (6) Parent: `omaha-beach`, as the issue asks; issue #2 may add a Neptune assault-phase parent, so re-parent then if wanted. Check-sources (2026-11-27): every cite re-read against rev. 1381099170 and every quote found verbatim. Fixed: locator for the 5th Rangers / Companies A–B participant (the diversion is in § Attack, not § Landings); added § Timeline to the 914th Grenadier Regiment locator for the 6–7 June dating; reworded the summary's last sentence, which was near-verbatim from the article. The underlying references (armyhistory.org for 77/152; Small Unit Actions on history.army.mil for ~15) could not be fetched (proxy 403; issue #3), so those figures are verified only as far as Wikipedia. The same revision also says the craft reached the cliffs 'with approximately half the force it started out with', which sits uneasily with '225 that had landed'; worth checking against Small Unit Actions."
   },
   "time": {
     "start": "1944-06-06",
@@ -43,7 +43,7 @@
     ]
   },
   "summary": {
-    "text": "Clifftop German coastal battery on the Normandy coast, assaulted on D-Day by Companies D, E and F of the US 2nd Ranger Battalion under Lt Col James E. Rudder. Delayed by about 40 minutes, the Rangers landed at the foot of the cliffs and climbed them with ropes, grapnels and ladders while ships offshore fired in support. The casemates on top turned out to be empty: the 155 mm guns had been moved, and patrols later found five of them nearby and disabled them with thermite grenades. Because the signal for the follow-up force came too late, Companies A and B of the 2nd Battalion and the whole 5th Ranger Battalion landed at Omaha Beach instead and joined the assault there. The Rangers on the headland, cut off, held against repeated counter-attacks by the German 914th Grenadier Regiment, with only a small group from the 5th Rangers getting through on the evening of 6 June. They were relieved on the morning of 8 June by Rangers, the 1st Battalion of the 116th Infantry and tanks of the 743rd Tank Battalion coming from Omaha. Afterwards a number of French civilians accused of shooting at US troops or acting as artillery observers for the Germans were executed.",
+    "text": "Clifftop German coastal battery on the Normandy coast, assaulted on D-Day by Companies D, E and F of the US 2nd Ranger Battalion under Lt Col James E. Rudder. Delayed by about 40 minutes, the Rangers landed at the foot of the cliffs and climbed them with ropes, grapnels and ladders while ships offshore fired in support. The casemates on top turned out to be empty: the 155 mm guns had been moved, and patrols later found five of them nearby and disabled them with thermite grenades. Because the signal for the follow-up force came too late, Companies A and B of the 2nd Battalion and the whole 5th Ranger Battalion landed at Omaha Beach instead and joined the assault there. The Rangers on the headland, cut off, held against repeated counter-attacks by the German 914th Grenadier Regiment, with only a small group from the 5th Rangers getting through on the evening of 6 June. They were relieved on the morning of 8 June by Rangers, the 1st Battalion of the 116th Infantry and tanks of the 743rd Tank Battalion coming from Omaha. After the battle a number of French civilians were executed on accusations that they had fired on US troops or spotted for German artillery.",
     "cite": [
       {
         "source": "wikipedia",
@@ -181,7 +181,7 @@
       "cite": [
         {
           "source": "wikipedia",
-          "locator": "Pointe du Hoc § Battle › Landings and § German counter-attacks (rev. 1381099170)"
+          "locator": "Pointe du Hoc § Battle › Attack and § Battle › German counter-attacks (rev. 1381099170)"
         }
       ]
     },
@@ -226,7 +226,7 @@
       "cite": [
         {
           "source": "wikipedia",
-          "locator": "Pointe du Hoc § Battle › German counter-attacks (rev. 1381099170)"
+          "locator": "Pointe du Hoc § Battle › German counter-attacks and § Timeline (6–7 June) (rev. 1381099170)"
         }
       ]
     }
