@@ -2,6 +2,7 @@
   "id": "utah-beach",
   "name": "Utah Beach",
   "kind": "landing",
+  "parent": "d-day-landings",
   "wikidata": "Q757273",
   "wikipedia": "https://en.wikipedia.org/wiki/Utah_Beach",
   "zoom": {
@@ -9,12 +10,17 @@
   },
   "review": {
     "status": "unreviewed",
-    "notes": "Imported from Wikidata. Single representative coordinate; dates and placement not yet verified against a primary or official source."
+    "notes": "Summary, parent and participants revised for issue #2 (previously a Wikidata description). Official histories (Harrison, Cross-Channel Attack; Ellis, Victory in the West vol. I; Stacey, The Victory Campaign) could not be fetched from the drafting session: the network proxy refused www.ibiblio.org, www.canada.ca and history.army.mil. Cites are therefore to English Wikipedia at a pinned revision, used only for uncontroversial facts (assaulting formation, location, objectives); they should be upgraded to the official histories once those can be read. Geometry unchanged: Wikidata representative point."
   },
   "time": {
     "start": "1944-06-06",
     "precision": "day",
     "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Utah Beach § lead (revision 1372907065)",
+        "quote": "in the Normandy landings on June 6, 1944 (D-Day)"
+      },
       {
         "source": "wikidata",
         "locator": "Q757273 P585"
@@ -36,12 +42,48 @@
     ]
   },
   "summary": {
-    "text": "1944 code name for the right flank of the Allied landing beaches in Normandy.",
+    "text": "The westernmost of the five D-Day landing beaches, on the Cotentin Peninsula west of the mouths of the Douve and Vire rivers. It was assaulted by the US 4th Infantry Division with the 70th Tank Battalion, supported by the 82nd and 101st Airborne Divisions landing inland. The aim was a beachhead from which to seal off the Cotentin Peninsula and take the port of Cherbourg quickly.",
     "cite": [
       {
-        "source": "wikidata",
-        "locator": "Q757273 description"
+        "source": "wikipedia",
+        "locator": "Utah Beach § lead (revision 1372907065)",
+        "quote": "The westernmost of the five code-named landing beaches in Normandy"
       }
     ]
-  }
+  },
+  "participants": [
+    {
+      "name": "US 4th Infantry Division",
+      "side": "allied",
+      "role": "Amphibious assault",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § lead (revision 1372907065)"
+        }
+      ]
+    },
+    {
+      "name": "US 70th Tank Battalion",
+      "side": "allied",
+      "role": "Amphibious assault",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § lead (revision 1372907065)"
+        }
+      ]
+    },
+    {
+      "name": "German 919th Grenadier Regiment (709th Static Infantry Division)",
+      "side": "axis",
+      "role": "Defence of the beach area",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § lead (revision 1372907065)"
+        }
+      ]
+    }
+  ]
 }

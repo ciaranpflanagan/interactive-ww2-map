@@ -1,0 +1,83 @@
+{
+  "id": "d-day-landings",
+  "name": "D-Day landings (Neptune assault phase)",
+  "kind": "landing",
+  "parent": "operation-overlord",
+  "wikipedia": "https://en.wikipedia.org/wiki/Normandy_landings",
+  "zoom": {
+    "min": 6
+  },
+  "review": {
+    "status": "unreviewed",
+    "notes": "Drafted for issue #2. Parent is operation-overlord because Wikipedia describes Neptune as the first (assault) phase of Overlord; normandy-landings and invasion-of-normandy are uncorrected Wikidata imports with doubtful end dates, so this record does not depend on them. No wikidata field: Q16470 is already used by normandy-landings. Representative point is Wikidata's coordinate for Q16470 (Normandy landings), roughly mid-way along the five beaches; an approximate area across the beaches is left to the beach-polygon issues. Official histories (Harrison, Cross-Channel Attack; Ellis, Victory in the West vol. I; Stacey, The Victory Campaign) could not be fetched from the drafting session: the network proxy refused www.ibiblio.org, www.canada.ca and history.army.mil. Cites are therefore to English Wikipedia at a pinned revision, used only for uncontroversial facts (assaulting formation, location, objectives); they should be upgraded to the official histories once those can be read. Geometry unchanged: Wikidata representative point."
+  },
+  "time": {
+    "start": "1944-06-06",
+    "precision": "day",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Normandy landings § lead (revision 1386946425)",
+        "quote": "the landing operations and associated airborne operations on 6 June 1944"
+      }
+    ]
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.6,
+      49.34
+    ],
+    "accuracy": "representative",
+    "cite": [
+      {
+        "source": "wikidata",
+        "locator": "Q16470 P625"
+      }
+    ]
+  },
+  "summary": {
+    "text": "The opening assault of the Allied invasion of Normandy on 6 June 1944, codenamed Operation Neptune: the first phase of Operation Overlord, covering the seaborne landing and the securing of an initial foothold. Airborne troops landed on both flanks during the night, followed from early morning by amphibious landings on five beaches: US forces at Utah and Omaha, British forces at Gold and Sword, and Canadian forces at Juno. A beachhead was established at each of the five beaches on the first day, but several major objectives inland, including Caen, were not taken.",
+    "cite": [
+      {
+        "source": "wikipedia",
+        "locator": "Normandy landings § Operations (revision 1386946425)",
+        "quote": "The first phase, the amphibious invasion and establishment of a secure foothold, was codenamed Operation Neptune."
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Normandy landings § lead (revision 1386946425)",
+        "quote": "divided into five sectors: Utah, Omaha, Gold, Juno, and Sword"
+      },
+      {
+        "source": "wikipedia",
+        "locator": "Normandy landings § lead (revision 1386946425)",
+        "quote": "establish beachheads at each of the five landing sites on the first day"
+      }
+    ]
+  },
+  "participants": [
+    {
+      "name": "US First Army",
+      "side": "allied",
+      "role": "Assault on Utah and Omaha",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Normandy landings § Allied order of battle § US zones (revision 1386946425)"
+        }
+      ]
+    },
+    {
+      "name": "British Second Army",
+      "side": "allied",
+      "role": "Assault on Gold, Juno and Sword",
+      "cite": [
+        {
+          "source": "wikipedia",
+          "locator": "Normandy landings § Allied order of battle § British and Canadian zones (revision 1386946425)"
+        }
+      ]
+    }
+  ]
+}
