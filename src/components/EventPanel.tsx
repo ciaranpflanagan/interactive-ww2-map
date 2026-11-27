@@ -24,13 +24,15 @@ export default function EventPanel({ event: e, sources, byId, onSelect, onClose 
   const add = (c: Cite) => { if (!list.some((x) => key(x) === key(c))) list.push(c); };
   [e.time.cite, e.summary.cite, ...(e.facts ?? []).map((f) => f.cite), ...(e.participants ?? []).map((p) => p.cite),
     ...(e.modern ?? []).map((m) => m.cite), e.geometry.cite].forEach((cs) => cs.forEach(add));
+  // Every field rendered with marks() below must be in this walk, or its markers would read [0].
   const index = (c: Cite) => list.findIndex((x) => key(x) === key(c)) + 1;
 
   // Long source lists start collapsed, and collapse again when another event is selected.
-  const [expandedFor, setExpandedFor] = useState<string | null>(null);
-  const sourcesOpen = expandedFor === e.id;
+  const [sourcesOpen, setSourcesOpen] = useState(false);
+  const [openFor, setOpenFor] = useState(e.id);
+  if (openFor !== e.id) { setOpenFor(e.id); setSourcesOpen(false); }
   const jump = (n: number) => {
-    flushSync(() => setExpandedFor(e.id));
+    flushSync(() => setSourcesOpen(true));
     const li = document.getElementById(`cite-${n}`);
     li?.scrollIntoView({ block: 'center' });
     li?.focus({ preventScroll: true });
@@ -101,7 +103,7 @@ export default function EventPanel({ event: e, sources, byId, onSelect, onClose 
       </p>
 
       <Collapsible id="panel-sources" title="Sources" count={list.length} open={sourcesOpen}
-        onToggle={() => setExpandedFor(sourcesOpen ? null : e.id)}>
+        onToggle={() => setSourcesOpen(!sourcesOpen)}>
         <CitationList cites={list} sources={sources} />
       </Collapsible>
       <p className="small">

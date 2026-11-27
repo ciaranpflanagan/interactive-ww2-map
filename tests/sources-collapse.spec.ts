@@ -41,6 +41,19 @@ test('clicking a citation marker expands the list and scrolls to the entry', asy
   await expect(entry).toBeFocused();
 });
 
+test('source list collapses again after visiting another event and coming back', async ({ page }) => {
+  const panel = await open(page, 'pointe-du-hoc');
+  const toggle = panel.getByRole('button', { name: /^Sources \(\d+\)$/ });
+  await toggle.click();
+  await expect(toggle).toHaveAttribute('aria-expanded', 'true');
+  const select = (id: string) => page.evaluate((x) => (window as unknown as { __selectEvent?: (id: string) => void }).__selectEvent?.(x), id);
+  await select('ardenne-abbey-massacre');
+  await expect(panel.getByRole('heading', { name: 'Sources', exact: true })).toBeVisible();
+  await select('pointe-du-hoc');
+  await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+  await expect(panel.locator('.citation-list')).toBeHidden();
+});
+
 test('short source list stays open with no toggle', async ({ page }) => {
   const panel = await open(page, 'ardenne-abbey-massacre');
   await expect(panel.getByRole('heading', { name: 'Sources', exact: true })).toBeVisible();

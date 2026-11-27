@@ -24,15 +24,15 @@ export default function AboutDialog({ sources, events, onClose }: { sources: Rec
       </p>
       <Collapsible id="source-register" title="Source register" count={register.length} open={registerOpen}
         onToggle={() => setRegisterOpen(!registerOpen)}>
-      <ul className="sources">
-        {register.map((s) => (
-          <li key={s.id}>
-            {s.url ? <a href={s.url} target="_blank" rel="noreferrer">{s.title}</a> : s.title}
-            {s.author && <>, {s.author}</>}{s.year && <> ({s.year})</>}
-            <span className="muted">. {s.type}; {s.license}</span>
-          </li>
-        ))}
-      </ul>
+        <ul className="sources">
+          {register.map((s) => (
+            <li key={s.id}>
+              {s.url ? <a href={s.url} target="_blank" rel="noreferrer">{s.title}</a> : s.title}
+              {s.author && <>, {s.author}</>}{s.year && <> ({s.year})</>}
+              <span className="muted">. {s.type}; {s.license}</span>
+            </li>
+          ))}
+        </ul>
       </Collapsible>
       <h3>Map</h3>
       <p className="small">Basemap by OpenFreeMap. Map data © OpenMapTiles, © OpenStreetMap contributors. The basemap shows present-day geography.</p>

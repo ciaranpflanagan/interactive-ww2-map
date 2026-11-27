@@ -8,7 +8,11 @@ export function CiteMarks({ cites, index, onJump }: { cites: Cite[]; index: (c: 
         const n = index(c);
         return (
           <a key={i} href={`#cite-${n}`} title={c.locator ?? c.source}
-            onClick={onJump && ((ev) => { ev.preventDefault(); onJump(n); })}>[{n}]</a>
+            onClick={onJump && ((ev) => {
+              // Leave modified and non-primary clicks to the browser (new tab, new window).
+              if (ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+              ev.preventDefault(); onJump(n);
+            })}>[{n}]</a>
         );
       })}
     </sup>
