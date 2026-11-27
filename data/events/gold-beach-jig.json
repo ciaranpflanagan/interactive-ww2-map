@@ -7,8 +7,8 @@
     "min": 12
   },
   "review": {
-    "status": "unreviewed",
-    "notes": "Drafted for issue #12. Network: this drafting session could reach only en.wikipedia.org, www.wikidata.org and tiles.openfreemap.org. Refused by the proxy (CONNECT 403 or no connection): www.ibiblio.org (Ellis, Victory in the West vol. I, HyperWar transcription), archive.org and web.archive.org, www.openstreetmap.org, overpass-api.de, nominatim.openstreetmap.org, cgsc.contentdm.oclc.org (Williams 2007 thesis), apps.dtic.mil, www.ddaymuseum.co.uk (Portsmouth Museum Services FAQ), www.cwgc.org, www.iwm.org.uk, www.dday-overlord.com, www.goldbeach.org.uk, fr.wikipedia.org; history.army.mil returned HTTP 403. No official history or named historian was read directly, so every historical cite is to English Wikipedia at a pinned revision; each locator names the work the article cites (mostly Trew 2004, Ford & Zaloga 2009) so the claims can be upgraded once those or Ellis can be read. OSM: openstreetmap.org was unreachable, so OSM-derived data was read from OpenFreeMap vector tiles (planet build 20261122_124456_pt, z14). Tile feature ids are cited as seen; they appear to encode the OSM element (id×10 + 1 node / 2 way / 3 relation, e.g. 9961187072 → way/996118707), but this could not be confirmed on openstreetmap.org, so no `osm` field is set. Geometry: a single representative point on the present-day shoreline at the longitude of the Le Hamel place node, because the 231st Brigade's first wave landed at Le Hamel/Asnelles. No polygon or line: the article says the Jig/King boundary was at strongpoint WN-35, Le Pont Chaussé, but no readable source located Le Pont Chaussé, and Jig's western limit is not described. Sub-beaches Jig Green and Jig Red appear only in image captions, so no separate records. Open questions: Ford & Zaloga (via Wikipedia) say the Hampshires' companies landed 'very close' to Le Hamel, while Trew (via Wikipedia) says both battalions came ashore 'well to the east' of their intended points; both are paraphrased in the summary without reconciling them. The 76 casualties for 47 Commando are agreed by both articles; the 47 Commando article's own source (47commando.org.uk) is a dead link."
+    "status": "agent-checked",
+    "notes": "Drafted for issue #12. Network: this drafting session could reach only en.wikipedia.org, www.wikidata.org and tiles.openfreemap.org. Refused by the proxy (CONNECT 403 or no connection): www.ibiblio.org (Ellis, Victory in the West vol. I, HyperWar transcription), archive.org and web.archive.org, www.openstreetmap.org, overpass-api.de, nominatim.openstreetmap.org, cgsc.contentdm.oclc.org (Williams 2007 thesis), apps.dtic.mil, www.ddaymuseum.co.uk (Portsmouth Museum Services FAQ), www.cwgc.org, www.iwm.org.uk, www.dday-overlord.com, www.goldbeach.org.uk, fr.wikipedia.org; history.army.mil returned HTTP 403. No official history or named historian was read directly, so every historical cite is to English Wikipedia at a pinned revision; each locator names the work the article cites (mostly Trew 2004, Ford & Zaloga 2009) so the claims can be upgraded once those or Ellis can be read. OSM: openstreetmap.org was unreachable, so OSM-derived data was read from OpenFreeMap vector tiles (planet build 20261122_124456_pt, z14). Tile feature ids are cited as seen; they appear to encode the OSM element (id×10 + 1 node / 2 way / 3 relation, e.g. 9961187072 → way/996118707), but this could not be confirmed on openstreetmap.org, so no `osm` field is set. Geometry: a single representative point on the present-day shoreline at the longitude of the Le Hamel place node, because the 231st Brigade's first wave landed at Le Hamel/Asnelles. No polygon or line: the article says the Jig/King boundary was at strongpoint WN-35, Le Pont Chaussé, but no readable source located Le Pont Chaussé, and Jig's western limit is not described. Sub-beaches Jig Green and Jig Red appear only in image captions, so no separate records. Open questions: Ford & Zaloga (via Wikipedia) say the Hampshires' companies landed 'very close' to Le Hamel, while Trew (via Wikipedia) says both battalions came ashore 'well to the east' of their intended points; both are paraphrased in the summary without reconciling them. The 76 casualties for 47 Commando are agreed by both articles; the 47 Commando article's own source (47commando.org.uk) is a dead link. Sources checked 2026-11-27 by an independent check-sources agent for PR #20: every quote, section locator and cited page verified against the pinned Wikipedia revisions; Le Hamel place feature re-read from the same OpenFreeMap build. Fixes: 47 Commando locators now name both refs on the paragraph (Trew p. 154, Ford & Zaloga p. 289) and the No. 47 Commando article section (§ Operations, not § History). The 1st Hampshires' WN-39 role rests on reading 'D Company' in § Jig Sector as a Hampshires company, which the paragraph implies."
   },
   "time": {
     "start": "1944-06-06T07:25",
@@ -93,12 +93,12 @@
       "cite": [
         {
           "source": "wikipedia",
-          "locator": "Gold Beach § Landings › 47 Commando; article cites Trew (2004) p. 154 (rev. 1385489912)",
+          "locator": "Gold Beach § Landings › 47 Commando; article cites Trew (2004) p. 154 and Ford & Zaloga (2009) p. 289 (rev. 1385489912)",
           "quote": "the commandos began disembarking at Jig, some distance east of their intended position, at 09:50"
         },
         {
           "source": "wikipedia",
-          "locator": "No. 47 (Royal Marine) Commando § History › June 1944 (rev. 1376240094)",
+          "locator": "No. 47 (Royal Marine) Commando § Operations › June 1944 (rev. 1376240094)",
           "quote": "No. 47 landed at Gold Beach at 09:50 hours 6 June near the town of Asnelles"
         }
       ]
@@ -112,12 +112,12 @@
       "cite": [
         {
           "source": "wikipedia",
-          "locator": "Gold Beach § Landings › 47 Commando; article cites Trew (2004) p. 154 (rev. 1385489912)",
+          "locator": "Gold Beach § Landings › 47 Commando; article cites Trew (2004) p. 154 and Ford & Zaloga (2009) p. 289 (rev. 1385489912)",
           "quote": "Five of their LCAs were sunk by beach obstacles or enemy fire, at the cost of 76 casualties."
         },
         {
           "source": "wikipedia",
-          "locator": "No. 47 (Royal Marine) Commando § History › June 1944 (rev. 1376240094)",
+          "locator": "No. 47 (Royal Marine) Commando § Operations › June 1944 (rev. 1376240094)",
           "quote": "with the loss of 76 of the 420 men in the Commando"
         }
       ]
@@ -220,7 +220,7 @@
         },
         {
           "source": "wikipedia",
-          "locator": "No. 47 (Royal Marine) Commando § History › June 1944 (rev. 1376240094)"
+          "locator": "No. 47 (Royal Marine) Commando § Operations › June 1944 (rev. 1376240094)"
         }
       ]
     },
