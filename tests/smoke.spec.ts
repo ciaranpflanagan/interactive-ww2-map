@@ -14,6 +14,9 @@ test('loads, scrubs the timeline and opens a sourced event', async ({ page }) =>
   await expect(panel).toBeVisible();
   await expect(panel.getByRole('heading', { name: 'Omaha Beach' })).toBeVisible();
   await expect(panel.getByRole('heading', { name: 'Sources' })).toBeVisible();
+  // Long lists start collapsed (see sources-collapse.spec.ts); expand if there is a toggle.
+  const toggle = panel.getByRole('button', { name: /^Sources \(\d+\)$/ });
+  if (await toggle.count()) await toggle.click();
   await expect(panel.locator('.citation-list li').first()).toBeVisible();
 
   const slider = page.getByRole('slider', { name: 'Date' });
