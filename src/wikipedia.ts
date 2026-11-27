@@ -14,7 +14,7 @@ export function parseWikipediaLocator(locator: string): WikipediaLocator | undef
   // Everything after the revision marker is a note, as is anything after ';'.
   const main = locator.split(REVISION)[0].split(';')[0].trim();
   const sectionStart = main.indexOf(' § ');
-  const article = (sectionStart >= 0 ? main.slice(0, sectionStart) : main.split(/,| \(/)[0]).trim();
+  const article = (sectionStart >= 0 ? main.slice(0, sectionStart) : main.split(/,/)[0]).trim();
   if (!article) return undefined;
   let section: string | undefined;
   if (sectionStart >= 0) {

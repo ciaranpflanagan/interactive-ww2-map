@@ -30,6 +30,7 @@ test.describe('Wikipedia locator parser', () => {
     ['Omaha Beach § Terrain and defenses',
       { article: 'Omaha Beach', section: 'Terrain and defenses' }],
     ['Utah Beach', { article: 'Utah Beach' }],
+    ['Operation Jupiter (1944) (revision 123)', { article: 'Operation Jupiter (1944)', revision: '123' }],
     ['', undefined],
   ];
   for (const [locator, expected] of cases) {
