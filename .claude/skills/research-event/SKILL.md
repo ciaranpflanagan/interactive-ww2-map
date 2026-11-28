@@ -32,6 +32,7 @@ Accuracy outranks completeness. A short record that is right beats a rich one wi
 7. **Hand off to an independent checker.** Start a new cloud session for the source check:
    - Environment: the one named `ww2-map` (look it up with the list-environments tool).
    - Repository: this repo, at your PR branch.
+   - Model: `opus` (see "Models per role" in CLAUDE.md).
    - Prompt, in plain words (a prompt may not start with `/`): "Use the check-sources skill to verify pull request #<PR>
      (branch <branch>)." Add any context the checker needs, but not your conclusions: it must judge the sources itself.
    - Comment on the PR: "Source check started: <session link>".

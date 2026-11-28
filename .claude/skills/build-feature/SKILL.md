@@ -18,6 +18,9 @@ description: Implement one app/code GitHub issue end to end and open a PR. Use w
    - Title: imperative, e.g. "Add deep links for selected events"
    - Body: `Closes #n`, what changed, how you verified it (commands, what the screenshot showed), and any follow-ups (open them as issues)
    - Labels: `feature` (or `bug`). Do **not** add `review:passed`; an independent reviewer does that.
-7. Final message: the PR link and anything a reviewer should look at closely.
+7. Start an independent reviewer: a new cloud session in the `ww2-map` environment at your PR branch, model `sonnet`,
+   with the plain-words prompt "Use the review-pr skill to review pull request #<PR> (branch <branch>)." (a prompt may
+   not start with `/`). Comment the session link on the PR. If you can't start sessions, comment that instead.
+8. Final message: the PR link and anything a reviewer should look at closely.
 
 Never touch `data/` in a feature PR. If the feature needs data changes, open a `data` issue.

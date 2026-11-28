@@ -50,6 +50,8 @@ then stop and say so in your report: the maintainer can run the round from a clo
 
 For each free worker slot, pick the oldest `agent:ready` issue (corrections and bugs first) and start a new session:
 - Environment: the one named **ww2-map** (look it up with the list-environments tool; never hardcode its id).
+- Model: per the "Models per role" table in CLAUDE.md (`sonnet` for most workers, `opus` for `check-sources`).
+- Don't exceed 3 running workers even when asked for one more issue: queue it and say so, unless the maintainer insists.
 - Repository: this repo.
 - Prompt, in plain words: "Use the <skill> skill to work on issue #<n>" (or "...to verify pull request #<n>"), plus one
   line of context. A session prompt may not start with `/`, so never write `/<skill>`. Skills: `build-feature`,

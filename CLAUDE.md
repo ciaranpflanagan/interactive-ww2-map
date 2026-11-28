@@ -73,4 +73,13 @@ HTTP 429 wait and retry a few times instead of switching to memory.
 - Merging: code PRs merge automatically once CI is green and `review:passed` is set (`.github/workflows/automerge.yml`).
   PRs touching `data/`, `schema/`, `.github/`, `infra/`, `.claude/`, `CLAUDE.md` or `package-lock.json` always wait for the maintainer.
 - Azure resources are created only from `infra/**/*.bicep`. Never use the portal, and never create resources from CLI commands.
+- **Models per role.** Whoever starts a worker session sets its model (the session tool's `model` field):
+
+  | Role | Model |
+  |---|---|
+  | `build-feature`, `review-pr`, `research-event` | `sonnet` |
+  | `check-sources` | `opus` (the last check before the maintainer; accuracy over cost) |
+  | Housekeeping sessions (creating issues, labels, comments only) | `haiku` |
+
+  The maintainer may name a different model in an issue or PR comment for a particular task; follow that.
 - Use whatever GitHub tooling the session provides (GitHub tools, or `gh` if authenticated). If you have none, stop and report that in your final message instead of guessing.
