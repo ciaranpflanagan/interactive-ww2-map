@@ -289,7 +289,7 @@
     ]
   },
   "summary": {
-    "text": "The westernmost of the five D-Day landing beaches, on the east coast of the Cotentin Peninsula west of the mouths of the Douve and Vire rivers. The US 4th Infantry Division, with the 70th Tank Battalion, made the seaborne assault; the 82nd and 101st Airborne Divisions had landed inland during the night to hold the causeways across the flooded ground behind the beach. The aim was to seal off the Cotentin Peninsula and take the port of Cherbourg quickly. The 8th Infantry Regiment landed first, in four waves from 06:30, on the beaches code-named Tare Green and Uncle Red. Strong currents set the craft down about 2,000 yards (1.8 km) south of the planned beaches, to a stretch near Exit 2 with only one strongpoint close by. Brigadier General Theodore Roosevelt Jr., the first senior officer ashore, decided to land the follow-up waves there rather than move the assault. Engineers and tank dozers cleared obstacles before the tide came in, the landing area was almost secure by 08:30, and the infantry then moved inland along the causeways to meet the airborne troops. German losses are unknown.",
+    "text": "The westernmost of the five D-Day landing beaches, on the east coast of the Cotentin Peninsula west of the mouths of the Douve and Vire rivers. The US 4th Infantry Division, with the 70th Tank Battalion, made the seaborne assault; the 82nd and 101st Airborne Divisions had landed inland during the night to secure the crossroads at Sainte-Mère-Église and the causeways across the flooded ground behind the beach. The aim was to seal off the Cotentin Peninsula and take the port of Cherbourg quickly. The 8th Infantry Regiment landed first, in four waves from 06:30, on the beaches code-named Tare Green and Uncle Red. Strong currents set the craft down about 2,000 yards (1.8 km) south of the planned beaches, to a stretch near Exit 2 with only one strongpoint close by. Brigadier General Theodore Roosevelt Jr., the first senior officer ashore, decided to land the follow-up waves there rather than move the assault. Engineers and tank dozers cleared obstacles before the tide came in, the landing area was almost secure by 08:30, and the infantry then moved inland along the causeways to meet the airborne troops. German losses are unknown.",
     "cite": [
       {
         "source": "wikipedia",
@@ -371,7 +371,8 @@
       "cite": [
         {
           "source": "wikipedia",
-          "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)"
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Landing (revision 1372907065)",
+          "quote": "The third wave, arriving at 06:45, included 16 conventional M4 Sherman tanks and 8 dozer tanks of the 70th Tank Battalion."
         },
         {
           "source": "cmh-utah-beach-to-cherbourg",
@@ -400,11 +401,12 @@
     {
       "name": "US 22nd Infantry Regiment, 3rd Battalion (4th Infantry Division)",
       "side": "allied",
-      "role": "Cleared strongpoints northward along the beach",
+      "role": "Moved north along the beach to eliminate German strongpoints",
       "cite": [
         {
           "source": "wikipedia",
-          "locator": "Utah Beach § D-Day (June 6, 1944) › Moving inland (revision 1372907065)"
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Moving inland (revision 1372907065)",
+          "quote": "tasked with eliminating as many German strongpoints as possible"
         }
       ]
     },
@@ -415,7 +417,8 @@
       "cite": [
         {
           "source": "wikipedia",
-          "locator": "Utah Beach § D-Day (June 6, 1944) › Moving inland (revision 1372907065)"
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Moving inland (revision 1372907065)",
+          "quote": "12th Infantry, who had traveled directly across the flooded fields"
         }
       ]
     },
@@ -442,7 +445,8 @@
         },
         {
           "source": "wikipedia",
-          "locator": "Utah Beach § D-Day (June 6, 1944) (revision 1372907065)"
+          "locator": "Utah Beach § D-Day (June 6, 1944) (revision 1372907065)",
+          "quote": "Paratroops from 101st Airborne were dropped beginning around 01:30"
         }
       ]
     },
@@ -480,7 +484,13 @@
       "cite": [
         {
           "source": "wikipedia",
-          "locator": "Utah Beach § D-Day (June 6, 1944) › Moving inland (revision 1372907065)"
+          "locator": "Utah Beach § German preparations (revision 1372907065)",
+          "quote": "The German 91st Infantry Division and 6th Fallschirmjäger Regiment, who arrived in May, were stationed inland as reserves."
+        },
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § D-Day (June 6, 1944) › Moving inland (revision 1372907065)",
+          "quote": "about 3,000 men of the 6th Fallschirmjäger Regiment moved into position near Saint-Côme-du-Mont, preventing the 501st Parachute Infantry from advancing any further"
         }
       ]
     }
@@ -639,8 +649,8 @@
     },
     {
       "label": "Casualties, 82nd and 101st Airborne Divisions (D-Day)",
-      "value": "c. 2,500",
-      "low": 2500,
+      "value": "c. 2,499–2,500",
+      "low": 2499,
       "high": 2500,
       "side": "US",
       "cite": [
@@ -648,8 +658,14 @@
           "source": "wikipedia",
           "locator": "Utah Beach § Result (revision 1372907065)",
           "quote": "Airborne troops arriving by parachute and glider numbered an additional 14,000 men, with 2,500 casualties."
+        },
+        {
+          "source": "wikipedia",
+          "locator": "Utah Beach § infobox, Casualties and losses (revision 1372907065); both figures cite Balkoski (2005) p. 331",
+          "quote": "Airborne: c. 2,499"
         }
-      ]
+      ],
+      "disputed": true
     },
     {
       "label": "Losses, other US units (engineers, 70th Tank Battalion, craft sunk)",
